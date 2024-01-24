@@ -1,8 +1,5 @@
 1//_____________________________________________________________
 //___________________| Reservation UI V2.5|______________________
-
-//to do: simplify create pages on reservation-template
-
 //_____________________________________________________________
 
 const reservationWindow = document.getElementById("reservation-window");
@@ -450,7 +447,6 @@ let setDatepickerKey = ($id,$description) => { //$id,$description
       $datepicker.parentNode.insertBefore(key, $datepicker.nextElementSibling);
     }
   } catch (error) {
-    //console.log(error);
   }
 };
 
@@ -462,15 +458,13 @@ let clearDatepickerKey = () => {
       datePickerKey[i].innerHTML = ''; 
     };
   } catch (error) {
-    //console.log(error);
+\\
   };
   
 };
 $createDatePickerLegend = (highlightedDates,$month) => {
 
   let alphaMonth = ["January","February","March","April","May","June","July","August","September","October","November","December"];
-  //alert($month+1);
-  //alert(alphaMonth[$month]);
 
   if(highlightedDates){
     for (let i = 0; i < highlightedDates.length; i++) {
@@ -496,8 +490,7 @@ let showCalendar = (page, $collector) => {
   let $name = $collector.Collectors[0].ControlName; // Control Names From cartData JSON
 
   createCalendar(page, $name);
-
-  //$cartDataHighlightDates
+	
   if(highlightData !== undefined && $cartDataHighlightDates !== undefined){
 
     setDisabledAndHighlited($cartDataDisabledDates,$cartDataHighlightDates); //[0]
@@ -513,8 +506,6 @@ let showCalendar = (page, $collector) => {
 
     // adds cutoff message if/when cutoff parameters are met
     cutOffMessage(page);
-
-
    //set date values if empty;
 
   if ($collector.Collectors[0].Value !== null) {
@@ -914,7 +905,6 @@ let createCollectors = (page, $collector) => {
       break;
 
     default:
-      //////console.log("no collectors to return", $collector);
       break;
   }
 };
@@ -1021,7 +1011,7 @@ let showEmailPhoneTemplate = (page) => {
     collectorContainer.appendChild(createEmailPhoneCollectors(false, true));
     document.getElementById(page).appendChild(collectorContainer);
   } else {
-    //////console.log("do nothing ");
+
   }
 };
 
@@ -1048,8 +1038,6 @@ let submitButton = (page) => {
   document.getElementById(page).appendChild($submitButton);
 
   $submitButton.addEventListener("click", function () {
-    // checkValue("dateInput");
-    //checkValue("SelectYourOahuHotel_2341");
   });
 };
 
@@ -1091,7 +1079,6 @@ let showPackageGroupings = (page) => {
         }
         packageButton.querySelector(".radio").className = "radio checked";
         $group = item[0];
-        //console.log(`function showPackageGroupings(): ${$group}`);
         localStorage.setItem("gGroup", $group);
       });
     });
@@ -1326,7 +1313,6 @@ $unorderedPrices.forEach( (item) =>{
       "click",
       function () {
         if (multiInputValidate("price-control")) {
-          //clearReservationPage("page2");
           displayPage3();
         } else {
           validateCart("price-message", true);
