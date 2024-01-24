@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Royal Lahaina Luau</title>
+    <meta
+      content="user-scalable = yes, width=320, initial-scale=1"
+      name="viewport"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <link href="css/main.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+<!-- ================================================= -->
+  <body>
+<!-- ================================================= -->
+    <!-- ========== masthead ========== -->
+    <nav id="main-nav">
+
+        <ul>
+            <li class="nav-desktop">
+                <a href="/">home</a>
+                <a href="/reservations.htm">reservations</a>
+                <a href="/menu.htm">menu</a>
+                <a href="/about.htm">about</a>
+            </li>
+
+            <li id="logo">
+                <a href="/">
+                    <img src="images/rolaylahainaluaulogo.png" alt="">
+                </a>
+            </li>
+            <li class="nav-desktop">
+                <a href="/faq.htm">faq</a>
+                <a href="/blog.htm">blog</a>
+                <a href="/contact.htm">contact</a>
+                <a href="/cart.htm">cart</a>
+            </li>
+        </ul>
+        <a href="tel:+18086722520" id="desktop-phone"><span class="material-symbols-outlined">call</span>1-808-672-2520</a>
+
+        <div class="mobile-phone">
+          <a href="tel:+18086722520" id="phone-mobile"><span class="material-symbols-outlined">call</span></a>
+        </div>
+        <div class="mobile-button">
+          <button class="menu-btn" id="menu-btn" name="button" onclick="idToggle('menu-btn','active');idToggle('mobile-nav','active')" type="button">
+              <hr class="menu-btn-hr-1">
+              <hr class="menu-btn-hr-2">
+              <hr class="menu-btn-hr-3">
+          </button>
+        </div>
+    </nav>
+    <nav id="mobile-nav">
+        <a href="/">home</a>
+        <a href="/reservations.htm">reservations</a>
+        <a href="/menu.htm">menu</a>
+        <a href="/about.htm">about</a>
+        <a href="/faq.htm">faq</a>
+        <a href="/blog.htm">blog</a>
+        <a href="/contact.htm">contact</a>
+        <a href="/cart.htm">cart</a>
+    </nav>
+    <a href="/reservations.htm" id="reserve-now">reserve now!</a>
+<!-- ================================================= -->    
+<link rel="stylesheet" href="css/reservations.css">
+
+<div class="reservation-hero">
+    <header>
+        <h1>Reservations</h1>
+        <hr>
+        <h3>Select a package below</h3>
+    </header>
+</div>
+
+<!-- =============================================================== -->
+<!-- =============================================================== -->
+<div id="luau-previews">
+  <div class="luau-preview" id="vip-seating">
+    <header>vip<br />package</header>
+    <hr />
+    <ul>
+      <li><p>&#x2022; Reserved seating area</p></li>
+      <li><p>&#x2022; flower lei for ladies and kukui nut lei for gentlemen</p></li>
+      <li><p>&#x2022; first set of tables to begin dinner service</p></li>
+      <li><p>&#x2022; complimentary premium drinks</p></li>
+      <li><p>&#x2022; First four rows seating close to stage</p></li>
+    </ul>
+    <p class="package-price">
+      from<br />
+      <span>$185.00</span><br />
+      <span class="strikethrough">$208.64</span>
+    </p>
+    <button type="button" class="luau-preview-button" id="vip-reservation">
+      Book Now
+    </button>
+  </div>
+
+  <div class="luau-preview" id="general-seating">
+    <header>general<br />package</header>
+    <hr />
+    <ul>
+      <li><p>&#x2022; Aloha shell lei greeting</p></li>
+      <li><p>&#x2022; dinner</p></li>
+      <li><p>&#x2022; open bar & luau show</p></li>
+      <li><p>&#x2022; Tables pre-assigned by date of booking</p></li>
+      <li><p>&#x2022; Ohana (family) style tables (up to 12 guests per table).</p></li>
+    </ul>
+    <p class="package-price">
+      from<br /><span>$115.00</span><br />
+      <span class="strikethrough">$129.80</span>
+    </p>
+    <button type="button" class="luau-preview-button" id="general-reservation">
+      Book Now
+    </button>
+  </div>
+</div>
+<!-- =============================================================== -->
+<!-- ================================= -->
+  
+  <input type="hidden" name="cart" value="True" />
+  <input type="hidden" name="updateProductOrder" value="Update" />
+  
+  <form action="/products/details/1" method="post">
+    <div id="reservation-window"></div>
+  </form>
+  
+  <script>
+    const emailName = "";
+    const emailPhone = "";
+  </script>
+  
+  <script>
+    let cartData = {"ProductID":8,"ProductKey":"386","ProductTitle":"Royal Lahaina Luau (Myths of Maui) ","ProductOrderKey":"386","Prices":[{"ID":117,"ControlName":"price_386_117","Key":"9512","Description":"General Luau - Per Adult (13 yrs+)","Limit":-1,"Quantity":0,"ListPrice":208.64,"Saleprice":185.00,"DisplayOrder":1,"Active":true,"Exempt":false,"Hidden":false,"Category":"Adult","Grouping":"General Luau","Availability":{"CollectorName":"Activity Date","ReferenceControl":"ActivityDate_386","ClosedDates":"[\"01/17/2024\",\"\"]","Cutoff":"12:00 PM"}},{"ID":118,"ControlName":"price_386_118","Key":"9513","Description":"General Luau - Per Child (6-12 yrs)","Limit":-1,"Quantity":0,"ListPrice":129.80,"Saleprice":115.00,"DisplayOrder":2,"Active":true,"Exempt":false,"Hidden":false,"Category":"Child","Grouping":"General Luau","Availability":{"CollectorName":"Activity Date","ReferenceControl":"ActivityDate_386","ClosedDates":"[\"01/17/2024\",\"\"]","Cutoff":"12:00 PM"}},{"ID":119,"ControlName":"price_386_119","Key":"9514","Description":"General Luau - Per Paying Adult, One Free Child (0-5 yrs)","Limit":-1,"Quantity":0,"ListPrice":0.00,"Saleprice":0.00,"DisplayOrder":3,"Active":true,"Exempt":false,"Hidden":false,"Category":"Child","Grouping":"General Luau","Availability":{"CollectorName":"Activity Date","ReferenceControl":"ActivityDate_386","ClosedDates":"[\"01/17/2024\",\"\"]","Cutoff":"12:00 PM"}},{"ID":120,"ControlName":"price_386_120","Key":"9515","Description":"General Luau - Per Additional Child (0-5 yrs)","Limit":-1,"Quantity":0,"ListPrice":129.80,"Saleprice":115.00,"DisplayOrder":4,"Active":true,"Exempt":false,"Hidden":false,"Category":"Child","Grouping":"General Luau","Availability":{"CollectorName":"Activity Date","ReferenceControl":"ActivityDate_386","ClosedDates":"[\"01/17/2024\",\"\"]","Cutoff":"12:00 PM"}},{"ID":121,"ControlName":"price_386_121","Key":"9516","Description":"VIP Luau - Per Adult (13 yrs+)","Limit":-1,"Quantity":0,"ListPrice":264.93,"Saleprice":235.00,"DisplayOrder":5,"Active":true,"Exempt":false,"Hidden":false,"Category":"Adult","Grouping":"VIP Luau","Availability":{"CollectorName":"Activity Date","ReferenceControl":"ActivityDate_386","ClosedDates":"[\"01/17/2024\",\"\"]","Cutoff":"12:00 PM"}},{"ID":122,"ControlName":"price_386_122","Key":"9517","Description":"VIP Luau - Per Child (6-12 yrs)","Limit":-1,"Quantity":0,"ListPrice":186.11,"Saleprice":165.00,"DisplayOrder":6,"Active":true,"Exempt":false,"Hidden":false,"Category":"Child","Grouping":"VIP Luau","Availability":{"CollectorName":"Activity Date","ReferenceControl":"ActivityDate_386","ClosedDates":"[\"01/17/2024\",\"\"]","Cutoff":"12:00 PM"}},{"ID":123,"ControlName":"price_386_123","Key":"9518","Description":"VIP Luau - Per Child (0-5 yrs)","Limit":-1,"Quantity":0,"ListPrice":56.61,"Saleprice":50.00,"DisplayOrder":7,"Active":true,"Exempt":false,"Hidden":false,"Category":"Child","Grouping":"VIP Luau","Availability":{"CollectorName":"Activity Date","ReferenceControl":"ActivityDate_386","ClosedDates":"[\"01/17/2024\",\"\"]","Cutoff":"12:00 PM"}}],"Availabilities":[{"CollectorName":"Activity Date","ReferenceControl":"ActivityDate_386","ClosedDates":"[\"01/22/2024\",\"01/29/2024\",\"02/05/2024\",\"02/12/2024\",\"02/19/2024\",\"02/26/2024\",\"03/04/2024\",\"03/11/2024\",\"03/18/2024\",\"03/25/2024\",\"04/01/2024\",\"04/08/2024\",\"04/15/2024\",\"04/22/2024\",\"04/29/2024\",\"05/06/2024\",\"05/13/2024\",\"05/20/2024\",\"05/27/2024\",\"06/03/2024\",\"06/10/2024\",\"06/17/2024\",\"06/24/2024\",\"07/01/2024\",\"07/08/2024\",\"07/15/2024\",\"07/22/2024\",\"07/29/2024\",\"08/05/2024\",\"08/12/2024\",\"08/19/2024\",\"08/26/2024\",\"09/02/2024\",\"09/09/2024\",\"09/16/2024\",\"09/23/2024\",\"09/30/2024\",\"10/07/2024\",\"10/14/2024\",\"10/21/2024\",\"10/28/2024\",\"11/04/2024\",\"11/11/2024\",\"11/18/2024\",\"11/25/2024\",\"12/02/2024\",\"12/09/2024\",\"12/16/2024\",\"12/23/2024\",\"12/30/2024\",\"01/06/2025\",\"01/13/2025\",\"01/17/2024\",\"01/24/2024\",\"01/31/2024\",\"02/07/2024\",\"02/14/2024\",\"02/21/2024\",\"02/28/2024\",\"03/06/2024\",\"03/13/2024\",\"03/20/2024\",\"03/27/2024\",\"04/03/2024\",\"04/10/2024\",\"04/17/2024\",\"04/24/2024\",\"05/01/2024\",\"05/08/2024\",\"05/15/2024\",\"05/22/2024\",\"05/29/2024\",\"06/05/2024\",\"06/12/2024\",\"06/19/2024\",\"06/26/2024\",\"07/03/2024\",\"07/10/2024\",\"07/17/2024\",\"07/24/2024\",\"07/31/2024\",\"08/07/2024\",\"08/14/2024\",\"08/21/2024\",\"08/28/2024\",\"09/04/2024\",\"09/11/2024\",\"09/18/2024\",\"09/25/2024\",\"10/02/2024\",\"10/09/2024\",\"10/16/2024\",\"10/23/2024\",\"10/30/2024\",\"11/06/2024\",\"11/13/2024\",\"11/20/2024\",\"11/27/2024\",\"12/04/2024\",\"12/11/2024\",\"12/18/2024\",\"12/25/2024\",\"01/01/2025\",\"01/08/2025\",\"01/15/2025\",\"01/18/2024\",\"01/25/2024\",\"02/01/2024\",\"02/08/2024\",\"02/15/2024\",\"02/22/2024\",\"02/29/2024\",\"03/07/2024\",\"03/14/2024\",\"03/21/2024\",\"03/28/2024\",\"04/04/2024\",\"04/11/2024\",\"04/18/2024\",\"04/25/2024\",\"05/02/2024\",\"05/09/2024\",\"05/16/2024\",\"05/23/2024\",\"05/30/2024\",\"06/06/2024\",\"06/13/2024\",\"06/20/2024\",\"06/27/2024\",\"07/04/2024\",\"07/11/2024\",\"07/18/2024\",\"07/25/2024\",\"08/01/2024\",\"08/08/2024\",\"08/15/2024\",\"08/22/2024\",\"08/29/2024\",\"09/05/2024\",\"09/12/2024\",\"09/19/2024\",\"09/26/2024\",\"10/03/2024\",\"10/10/2024\",\"10/17/2024\",\"10/24/2024\",\"10/31/2024\",\"11/07/2024\",\"11/14/2024\",\"11/21/2024\",\"11/28/2024\",\"12/05/2024\",\"12/12/2024\",\"12/19/2024\",\"12/26/2024\",\"01/02/2025\",\"01/09/2025\",\"01/16/2025\",\"01/19/2024\",\"01/26/2024\",\"02/02/2024\",\"02/09/2024\",\"02/16/2024\",\"02/23/2024\",\"03/01/2024\",\"03/08/2024\",\"03/15/2024\",\"03/22/2024\",\"03/29/2024\",\"04/05/2024\",\"04/12/2024\",\"04/19/2024\",\"04/26/2024\",\"05/03/2024\",\"05/10/2024\",\"05/17/2024\",\"05/24/2024\",\"05/31/2024\",\"06/07/2024\",\"06/14/2024\",\"06/21/2024\",\"06/28/2024\",\"07/05/2024\",\"07/12/2024\",\"07/19/2024\",\"07/26/2024\",\"08/02/2024\",\"08/09/2024\",\"08/16/2024\",\"08/23/2024\",\"08/30/2024\",\"09/06/2024\",\"09/13/2024\",\"09/20/2024\",\"09/27/2024\",\"10/04/2024\",\"10/11/2024\",\"10/18/2024\",\"10/25/2024\",\"11/01/2024\",\"11/08/2024\",\"11/15/2024\",\"11/22/2024\",\"11/29/2024\",\"12/06/2024\",\"12/13/2024\",\"12/20/2024\",\"12/27/2024\",\"01/03/2025\",\"01/10/2025\",\"01/17/2025\",\"01/20/2024\",\"01/27/2024\",\"02/03/2024\",\"02/10/2024\",\"02/17/2024\",\"02/24/2024\",\"03/02/2024\",\"03/09/2024\",\"03/16/2024\",\"03/23/2024\",\"03/30/2024\",\"04/06/2024\",\"04/13/2024\",\"04/20/2024\",\"04/27/2024\",\"05/04/2024\",\"05/11/2024\",\"05/18/2024\",\"05/25/2024\",\"06/01/2024\",\"06/08/2024\",\"06/15/2024\",\"06/22/2024\",\"06/29/2024\",\"07/06/2024\",\"07/13/2024\",\"07/20/2024\",\"07/27/2024\",\"08/03/2024\",\"08/10/2024\",\"08/17/2024\",\"08/24/2024\",\"08/31/2024\",\"09/07/2024\",\"09/14/2024\",\"09/21/2024\",\"09/28/2024\",\"10/05/2024\",\"10/12/2024\",\"10/19/2024\",\"10/26/2024\",\"11/02/2024\",\"11/09/2024\",\"11/16/2024\",\"11/23/2024\",\"11/30/2024\",\"12/07/2024\",\"12/14/2024\",\"12/21/2024\",\"12/28/2024\",\"01/04/2025\",\"01/11/2025\",\"12/31/2023\"]","Cutoff":"12:00 PM"}],"Collectors":[{"ID":0,"ControlName":"ActivityDate_386","ApplicationDataType":2,"ListMember":null,"Name":"Activity Date","DisplayOrder":0,"DisplayAlias":null,"Value":null,"Required":false},{"ID":0,"ControlName":"ParticipantNamesandAges_386","ApplicationDataType":0,"ListMember":null,"Name":"Participant Names and Ages","DisplayOrder":0,"DisplayAlias":null,"Value":null,"Required":false},{"ID":0,"ControlName":"SelectYourMauiHotel_386","ApplicationDataType":7,"ListMember":{"ID":74,"ControlName":null,"Shortcode":"Select Your Maui Hotel","Code":"Select Your Maui Hotel","Selected":false,"Value":"","ListMembers":[{"ID":226,"ControlName":null,"Shortcode":"-- Select --","Code":"-- Select --","Selected":false,"Value":"","ListMembers":[]},{"ID":227,"ControlName":null,"Shortcode":"Aina Nalu","Code":"Aina Nalu","Selected":false,"Value":"","ListMembers":[]},{"ID":228,"ControlName":null,"Shortcode":"Alaeloa","Code":"Alaeloa","Selected":false,"Value":"","ListMembers":[]},{"ID":229,"ControlName":null,"Shortcode":"Andaz Maui at Wailea","Code":"Andaz Maui at Wailea","Selected":false,"Value":"","ListMembers":[]},{"ID":230,"ControlName":null,"Shortcode":"Aston at Papakea Resort","Code":"Aston at Papakea Resort","Selected":false,"Value":"","ListMembers":[]},{"ID":231,"ControlName":null,"Shortcode":"Aston at The Whaler on Kaanapali Beach","Code":"Aston at The Whaler on Kaanapali Beach","Selected":false,"Value":"","ListMembers":[]},{"ID":232,"ControlName":null,"Shortcode":"Aston Maui Hill","Code":"Aston Maui Hill","Selected":false,"Value":"","ListMembers":[]},{"ID":233,"ControlName":null,"Shortcode":"Aston Maui Lu Resort","Code":"Aston Maui Lu Resort","Selected":false,"Value":"","ListMembers":[]},{"ID":234,"ControlName":null,"Shortcode":"Aston Paki Maui","Code":"Aston Paki Maui","Selected":false,"Value":"","ListMembers":[]},{"ID":235,"ControlName":null,"Shortcode":"Banana Bungalows","Code":"Banana Bungalows","Selected":false,"Value":"","ListMembers":[]},{"ID":236,"ControlName":null,"Shortcode":"Courtyard by Marriott Airport - Maui","Code":"Courtyard by Marriott Airport - Maui","Selected":false,"Value":"","ListMembers":[]},{"ID":237,"ControlName":null,"Shortcode":"Cruise Ship","Code":"Cruise Ship","Selected":false,"Value":"","ListMembers":[]},{"ID":238,"ControlName":null,"Shortcode":"Days Inn Maui Oceanfront","Code":"Days Inn Maui Oceanfront","Selected":false,"Value":"","ListMembers":[]},{"ID":239,"ControlName":null,"Shortcode":"Dreams Do Come True B& B","Code":"Dreams Do Come True B& B","Selected":false,"Value":"","ListMembers":[]},{"ID":240,"ControlName":null,"Shortcode":"Fairmont Kealani - Wailea","Code":"Fairmont Kealani - Wailea","Selected":false,"Value":"","ListMembers":[]},{"ID":241,"ControlName":null,"Shortcode":"Four Seasons Maui","Code":"Four Seasons Maui","Selected":false,"Value":"","ListMembers":[]},{"ID":242,"ControlName":null,"Shortcode":"Gardens At West Maui","Code":"Gardens At West Maui","Selected":false,"Value":"","ListMembers":[]},{"ID":243,"ControlName":null,"Shortcode":"Grand Champions","Code":"Grand Champions","Selected":false,"Value":"","ListMembers":[]},{"ID":244,"ControlName":null,"Shortcode":"Grand Wailea","Code":"Grand Wailea","Selected":false,"Value":"","ListMembers":[]},{"ID":245,"ControlName":null,"Shortcode":"Hale Hui Kai","Code":"Hale Hui Kai","Selected":false,"Value":"","ListMembers":[]},{"ID":246,"ControlName":null,"Shortcode":"Hale Kai Condos","Code":"Hale Kai Condos","Selected":false,"Value":"","ListMembers":[]},{"ID":247,"ControlName":null,"Shortcode":"Hale Kai O Kihei","Code":"Hale Kai O Kihei","Selected":false,"Value":"","ListMembers":[]},{"ID":248,"ControlName":null,"Shortcode":"Hale Kamaole","Code":"Hale Kamaole","Selected":false,"Value":"","ListMembers":[]},{"ID":249,"ControlName":null,"Shortcode":"Hale Mahina Beach","Code":"Hale Mahina Beach","Selected":false,"Value":"","ListMembers":[]},{"ID":250,"ControlName":null,"Shortcode":"Hale Napili","Code":"Hale Napili","Selected":false,"Value":"","ListMembers":[]},{"ID":251,"ControlName":null,"Shortcode":"Hale Ono Loa","Code":"Hale Ono Loa","Selected":false,"Value":"","ListMembers":[]},{"ID":252,"ControlName":null,"Shortcode":"Hale Pau Hana","Code":"Hale Pau Hana","Selected":false,"Value":"","ListMembers":[]},{"ID":253,"ControlName":null,"Shortcode":"Haleakala Shores","Code":"Haleakala Shores","Selected":false,"Value":"","ListMembers":[]},{"ID":254,"ControlName":null,"Shortcode":"Hana Airport","Code":"Hana Airport","Selected":false,"Value":"","ListMembers":[]},{"ID":255,"ControlName":null,"Shortcode":"Hololani","Code":"Hololani","Selected":false,"Value":"","ListMembers":[]},{"ID":256,"ControlName":null,"Shortcode":"Hono Kai Resort","Code":"Hono Kai Resort","Selected":false,"Value":"","ListMembers":[]},{"ID":257,"ControlName":null,"Shortcode":"Hono Koa","Code":"Hono Koa","Selected":false,"Value":"","ListMembers":[]},{"ID":258,"ControlName":null,"Shortcode":"Honokeana Cove","Code":"Honokeana Cove","Selected":false,"Value":"","ListMembers":[]},{"ID":259,"ControlName":null,"Shortcode":"Honua Kai","Code":"Honua Kai","Selected":false,"Value":"","ListMembers":[]},{"ID":260,"ControlName":null,"Shortcode":"Hoolei At Grand Wailea","Code":"Hoolei At Grand Wailea","Selected":false,"Value":"","ListMembers":[]},{"ID":261,"ControlName":null,"Shortcode":"Hotel Hana Maui","Code":"Hotel Hana Maui","Selected":false,"Value":"","ListMembers":[]},{"ID":262,"ControlName":null,"Shortcode":"Hotel Wailea","Code":"Hotel Wailea","Selected":false,"Value":"","ListMembers":[]},{"ID":263,"ControlName":null,"Shortcode":"Hyatt Regency Maui","Code":"Hyatt Regency Maui","Selected":false,"Value":"","ListMembers":[]},{"ID":264,"ControlName":null,"Shortcode":"International Colony Club","Code":"International Colony Club","Selected":false,"Value":"","ListMembers":[]},{"ID":265,"ControlName":null,"Shortcode":"Island Sands","Code":"Island Sands","Selected":false,"Value":"","ListMembers":[]},{"ID":266,"ControlName":null,"Shortcode":"Island Surf","Code":"Island Surf","Selected":false,"Value":"","ListMembers":[]},{"ID":267,"ControlName":null,"Shortcode":"Kaanapali Alii","Code":"Kaanapali Alii","Selected":false,"Value":"","ListMembers":[]},{"ID":268,"ControlName":null,"Shortcode":"Kaanapali Beach Club","Code":"Kaanapali Beach Club","Selected":false,"Value":"","ListMembers":[]},{"ID":269,"ControlName":null,"Shortcode":"Kaanapali Beach Hotel","Code":"Kaanapali Beach Hotel","Selected":false,"Value":"","ListMembers":[]},{"ID":270,"ControlName":null,"Shortcode":"Kaanapali Ocean Inn","Code":"Kaanapali Ocean Inn","Selected":false,"Value":"","ListMembers":[]},{"ID":271,"ControlName":null,"Shortcode":"Kaanapali Plantation","Code":"Kaanapali Plantation","Selected":false,"Value":"","ListMembers":[]},{"ID":272,"ControlName":null,"Shortcode":"Kaanapali Royale","Code":"Kaanapali Royale","Selected":false,"Value":"","ListMembers":[]},{"ID":273,"ControlName":null,"Shortcode":"Kaanapali Shores","Code":"Kaanapali Shores","Selected":false,"Value":"","ListMembers":[]},{"ID":274,"ControlName":null,"Shortcode":"Kaanapali Villas","Code":"Kaanapali Villas","Selected":false,"Value":"","ListMembers":[]},{"ID":275,"ControlName":null,"Shortcode":"Kaha Lani Resort","Code":"Kaha Lani Resort","Selected":false,"Value":"","ListMembers":[]},{"ID":276,"ControlName":null,"Shortcode":"Kahana Beach Resort","Code":"Kahana Beach Resort","Selected":false,"Value":"","ListMembers":[]},{"ID":277,"ControlName":null,"Shortcode":"Kahana Falls","Code":"Kahana Falls","Selected":false,"Value":"","ListMembers":[]},{"ID":278,"ControlName":null,"Shortcode":"Kalama Terrace","Code":"Kalama Terrace","Selected":false,"Value":"","ListMembers":[]},{"ID":279,"ControlName":null,"Shortcode":"Kaleialoha Condos","Code":"Kaleialoha Condos","Selected":false,"Value":"","ListMembers":[]},{"ID":280,"ControlName":null,"Shortcode":"Kamaole Beach Club","Code":"Kamaole Beach Club","Selected":false,"Value":"","ListMembers":[]},{"ID":281,"ControlName":null,"Shortcode":"Kamaole Beach Royale","Code":"Kamaole Beach Royale","Selected":false,"Value":"","ListMembers":[]},{"ID":282,"ControlName":null,"Shortcode":"Kamaole Nalu Resort","Code":"Kamaole Nalu Resort","Selected":false,"Value":"","ListMembers":[]},{"ID":283,"ControlName":null,"Shortcode":"Kamaole Sands","Code":"Kamaole Sands","Selected":false,"Value":"","ListMembers":[]},{"ID":284,"ControlName":null,"Shortcode":"Kanai A Nalu Condo","Code":"Kanai A Nalu Condo","Selected":false,"Value":"","ListMembers":[]},{"ID":285,"ControlName":null,"Shortcode":"Kapalua Airport","Code":"Kapalua Airport","Selected":false,"Value":"","ListMembers":[]},{"ID":286,"ControlName":null,"Shortcode":"Kapalua Bay Villas","Code":"Kapalua Bay Villas","Selected":false,"Value":"","ListMembers":[]},{"ID":287,"ControlName":null,"Shortcode":"Kapalua Golf Villas","Code":"Kapalua Golf Villas","Selected":false,"Value":"","ListMembers":[]},{"ID":288,"ControlName":null,"Shortcode":"Kapalua Ridge Hotel","Code":"Kapalua Ridge Hotel","Selected":false,"Value":"","ListMembers":[]},{"ID":289,"ControlName":null,"Shortcode":"Kealia Beach Plaza","Code":"Kealia Beach Plaza","Selected":false,"Value":"","ListMembers":[]},{"ID":290,"ControlName":null,"Shortcode":"Kihei Akahi","Code":"Kihei Akahi","Selected":false,"Value":"","ListMembers":[]},{"ID":291,"ControlName":null,"Shortcode":"Kihei Alii Kai","Code":"Kihei Alii Kai","Selected":false,"Value":"","ListMembers":[]},{"ID":292,"ControlName":null,"Shortcode":"Kihei Bay Surf","Code":"Kihei Bay Surf","Selected":false,"Value":"","ListMembers":[]},{"ID":293,"ControlName":null,"Shortcode":"Kihei Bay Vista","Code":"Kihei Bay Vista","Selected":false,"Value":"","ListMembers":[]},{"ID":294,"ControlName":null,"Shortcode":"Kihei Beach Resort","Code":"Kihei Beach Resort","Selected":false,"Value":"","ListMembers":[]},{"ID":295,"ControlName":null,"Shortcode":"Kihei Beachfront Villas","Code":"Kihei Beachfront Villas","Selected":false,"Value":"","ListMembers":[]},{"ID":296,"ControlName":null,"Shortcode":"Kihei Garden Estates","Code":"Kihei Garden Estates","Selected":false,"Value":"","ListMembers":[]},{"ID":297,"ControlName":null,"Shortcode":"Kihei Holiday","Code":"Kihei Holiday","Selected":false,"Value":"","ListMembers":[]},{"ID":298,"ControlName":null,"Shortcode":"Kihei Kai","Code":"Kihei Kai","Selected":false,"Value":"","ListMembers":[]},{"ID":299,"ControlName":null,"Shortcode":"Kihei Kai Nani","Code":"Kihei Kai Nani","Selected":false,"Value":"","ListMembers":[]},{"ID":300,"ControlName":null,"Shortcode":"Kihei Resort","Code":"Kihei Resort","Selected":false,"Value":"","ListMembers":[]},{"ID":301,"ControlName":null,"Shortcode":"Kihei Sands","Code":"Kihei Sands","Selected":false,"Value":"","ListMembers":[]},{"ID":302,"ControlName":null,"Shortcode":"Kihei Shores","Code":"Kihei Shores","Selected":false,"Value":"","ListMembers":[]},{"ID":303,"ControlName":null,"Shortcode":"Kihei Surfside","Code":"Kihei Surfside","Selected":false,"Value":"","ListMembers":[]},{"ID":304,"ControlName":null,"Shortcode":"Koa Lagoon Beach Rentals","Code":"Koa Lagoon Beach Rentals","Selected":false,"Value":"","ListMembers":[]},{"ID":305,"ControlName":null,"Shortcode":"Koa Resort","Code":"Koa Resort","Selected":false,"Value":"","ListMembers":[]},{"ID":306,"ControlName":null,"Shortcode":"Kuleana Resorts","Code":"Kuleana Resorts","Selected":false,"Value":"","ListMembers":[]},{"ID":307,"ControlName":null,"Shortcode":"Lahaina Bungalows","Code":"Lahaina Bungalows","Selected":false,"Value":"","ListMembers":[]},{"ID":308,"ControlName":null,"Shortcode":"Lahaina Inn / Hotel","Code":"Lahaina Inn / Hotel","Selected":false,"Value":"","ListMembers":[]},{"ID":309,"ControlName":null,"Shortcode":"Lahaina Last Resort","Code":"Lahaina Last Resort","Selected":false,"Value":"","ListMembers":[]},{"ID":310,"ControlName":null,"Shortcode":"Lahaina Roads","Code":"Lahaina Roads","Selected":false,"Value":"","ListMembers":[]},{"ID":311,"ControlName":null,"Shortcode":"Lahaina Shores Beach Resort","Code":"Lahaina Shores Beach Resort","Selected":false,"Value":"","ListMembers":[]},{"ID":312,"ControlName":null,"Shortcode":"Leinaala Resort","Code":"Leinaala Resort","Selected":false,"Value":"","ListMembers":[]},{"ID":313,"ControlName":null,"Shortcode":"Lokelani Condos","Code":"Lokelani Condos","Selected":false,"Value":"","ListMembers":[]},{"ID":314,"ControlName":null,"Shortcode":"Luana Kai Resort","Code":"Luana Kai Resort","Selected":false,"Value":"","ListMembers":[]},{"ID":315,"ControlName":null,"Shortcode":"Maalaea Banyans","Code":"Maalaea Banyans","Selected":false,"Value":"","ListMembers":[]},{"ID":316,"ControlName":null,"Shortcode":"Maalaea Kai","Code":"Maalaea Kai","Selected":false,"Value":"","ListMembers":[]},{"ID":317,"ControlName":null,"Shortcode":"Maalaea Surf","Code":"Maalaea Surf","Selected":false,"Value":"","ListMembers":[]},{"ID":318,"ControlName":null,"Shortcode":"Maalaea Yacht Marina","Code":"Maalaea Yacht Marina","Selected":false,"Value":"","ListMembers":[]},{"ID":319,"ControlName":null,"Shortcode":"Mahina Surf","Code":"Mahina Surf","Selected":false,"Value":"","ListMembers":[]},{"ID":320,"ControlName":null,"Shortcode":"Makai Inn","Code":"Makai Inn","Selected":false,"Value":"","ListMembers":[]},{"ID":321,"ControlName":null,"Shortcode":"Makani Sands","Code":"Makani Sands","Selected":false,"Value":"","ListMembers":[]},{"ID":322,"ControlName":null,"Shortcode":"Makena Surf","Code":"Makena Surf","Selected":false,"Value":"","ListMembers":[]},{"ID":323,"ControlName":null,"Shortcode":"Mana Kai Maui","Code":"Mana Kai Maui","Selected":false,"Value":"","ListMembers":[]},{"ID":324,"ControlName":null,"Shortcode":"Marriott Maui Ocean Club","Code":"Marriott Maui Ocean Club","Selected":false,"Value":"","ListMembers":[]},{"ID":325,"ControlName":null,"Shortcode":"Masters At Kaanapali Hillside","Code":"Masters At Kaanapali Hillside","Selected":false,"Value":"","ListMembers":[]},{"ID":326,"ControlName":null,"Shortcode":"Maui Banyan","Code":"Maui Banyan","Selected":false,"Value":"","ListMembers":[]},{"ID":327,"ControlName":null,"Shortcode":"Maui Beach Hotel","Code":"Maui Beach Hotel","Selected":false,"Value":"","ListMembers":[]},{"ID":328,"ControlName":null,"Shortcode":"Maui Beach Resort","Code":"Maui Beach Resort","Selected":false,"Value":"","ListMembers":[]},{"ID":329,"ControlName":null,"Shortcode":"Maui Beach Vacation Club","Code":"Maui Beach Vacation Club","Selected":false,"Value":"","ListMembers":[]},{"ID":330,"ControlName":null,"Shortcode":"Maui Coast Hotel","Code":"Maui Coast Hotel","Selected":false,"Value":"","ListMembers":[]},{"ID":331,"ControlName":null,"Shortcode":"Maui Eldorado Kaanapali","Code":"Maui Eldorado Kaanapali","Selected":false,"Value":"","ListMembers":[]},{"ID":332,"ControlName":null,"Shortcode":"Maui Kai Condo","Code":"Maui Kai Condo","Selected":false,"Value":"","ListMembers":[]},{"ID":333,"ControlName":null,"Shortcode":"Maui Kamaole","Code":"Maui Kamaole","Selected":false,"Value":"","ListMembers":[]},{"ID":334,"ControlName":null,"Shortcode":"Maui Parkshore","Code":"Maui Parkshore","Selected":false,"Value":"","ListMembers":[]},{"ID":335,"ControlName":null,"Shortcode":"Maui Sands","Code":"Maui Sands","Selected":false,"Value":"","ListMembers":[]},{"ID":336,"ControlName":null,"Shortcode":"Maui Schooner","Code":"Maui Schooner","Selected":false,"Value":"","ListMembers":[]},{"ID":337,"ControlName":null,"Shortcode":"Maui Seaside Hotel","Code":"Maui Seaside Hotel","Selected":false,"Value":"","ListMembers":[]},{"ID":338,"ControlName":null,"Shortcode":"Maui Sunset","Code":"Maui Sunset","Selected":false,"Value":"","ListMembers":[]},{"ID":339,"ControlName":null,"Shortcode":"Maui Vista","Code":"Maui Vista","Selected":false,"Value":"","ListMembers":[]},{"ID":340,"ControlName":null,"Shortcode":"Maui Westside Condos","Code":"Maui Westside Condos","Selected":false,"Value":"","ListMembers":[]},{"ID":341,"ControlName":null,"Shortcode":"Menehune Shores","Code":"Menehune Shores","Selected":false,"Value":"","ListMembers":[]},{"ID":342,"ControlName":null,"Shortcode":"Milowai Resort","Code":"Milowai Resort","Selected":false,"Value":"","ListMembers":[]},{"ID":343,"ControlName":null,"Shortcode":"Nani Kai Hale","Code":"Nani Kai Hale","Selected":false,"Value":"","ListMembers":[]},{"ID":344,"ControlName":null,"Shortcode":"Napili Bay Resort","Code":"Napili Bay Resort","Selected":false,"Value":"","ListMembers":[]},{"ID":345,"ControlName":null,"Shortcode":"Napili Kai Beach","Code":"Napili Kai Beach","Selected":false,"Value":"","ListMembers":[]},{"ID":346,"ControlName":null,"Shortcode":"Napili Point","Code":"Napili Point","Selected":false,"Value":"","ListMembers":[]},{"ID":347,"ControlName":null,"Shortcode":"Napili Sunset","Code":"Napili Sunset","Selected":false,"Value":"","ListMembers":[]},{"ID":348,"ControlName":null,"Shortcode":"Napili Surf Beach Resort","Code":"Napili Surf Beach Resort","Selected":false,"Value":"","ListMembers":[]},{"ID":349,"ControlName":null,"Shortcode":"Napili Village","Code":"Napili Village","Selected":false,"Value":"","ListMembers":[]},{"ID":350,"ControlName":null,"Shortcode":"Noelani Condominium Resort","Code":"Noelani Condominium Resort","Selected":false,"Value":"","ListMembers":[]},{"ID":351,"ControlName":null,"Shortcode":"Nohonani Condos","Code":"Nohonani Condos","Selected":false,"Value":"","ListMembers":[]},{"ID":352,"ControlName":null,"Shortcode":"Nona Lani Cottages","Code":"Nona Lani Cottages","Selected":false,"Value":"","ListMembers":[]},{"ID":353,"ControlName":null,"Shortcode":"North Shore Hostel","Code":"North Shore Hostel","Selected":false,"Value":"","ListMembers":[]},{"ID":354,"ControlName":null,"Shortcode":"Old Lahaina House","Code":"Old Lahaina House","Selected":false,"Value":"","ListMembers":[]},{"ID":355,"ControlName":null,"Shortcode":"One Napili Way","Code":"One Napili Way","Selected":false,"Value":"","ListMembers":[]},{"ID":356,"ControlName":null,"Shortcode":"Other","Code":"Other","Selected":false,"Value":"","ListMembers":[]},{"ID":357,"ControlName":null,"Shortcode":"Outrigger Napili Shores","Code":"Outrigger Napili Shores","Selected":false,"Value":"","ListMembers":[]},{"ID":358,"ControlName":null,"Shortcode":"Outrigger Palms At Wailea","Code":"Outrigger Palms At Wailea","Selected":false,"Value":"","ListMembers":[]},{"ID":359,"ControlName":null,"Shortcode":"Pioneer Inn Grill & Bar","Code":"Pioneer Inn Grill & Bar","Selected":false,"Value":"","ListMembers":[]},{"ID":360,"ControlName":null,"Shortcode":"Pohailani Maui","Code":"Pohailani Maui","Selected":false,"Value":"","ListMembers":[]},{"ID":361,"ControlName":null,"Shortcode":"Polo Beach Club","Code":"Polo Beach Club","Selected":false,"Value":"","ListMembers":[]},{"ID":362,"ControlName":null,"Shortcode":"Polynesian Shores","Code":"Polynesian Shores","Selected":false,"Value":"","ListMembers":[]},{"ID":363,"ControlName":null,"Shortcode":"Puamana","Code":"Puamana","Selected":false,"Value":"","ListMembers":[]},{"ID":364,"ControlName":null,"Shortcode":"Renaissance Wailea","Code":"Renaissance Wailea","Selected":false,"Value":"","ListMembers":[]},{"ID":365,"ControlName":null,"Shortcode":"Residence Inn Wailea to the Maui","Code":"Residence Inn Wailea to the Maui","Selected":false,"Value":"","ListMembers":[]},{"ID":366,"ControlName":null,"Shortcode":"Ritz Carlton Club And Residences","Code":"Ritz Carlton Club And Residences","Selected":false,"Value":"","ListMembers":[]},{"ID":367,"ControlName":null,"Shortcode":"Ritz-Carlton","Code":"Ritz-Carlton","Selected":false,"Value":"","ListMembers":[]},{"ID":368,"ControlName":null,"Shortcode":"Royal Kahana","Code":"Royal Kahana","Selected":false,"Value":"","ListMembers":[]},{"ID":369,"ControlName":null,"Shortcode":"Royal Lahaina Resort","Code":"Royal Lahaina Resort","Selected":false,"Value":"","ListMembers":[]},{"ID":370,"ControlName":null,"Shortcode":"Royal Mauian Resort","Code":"Royal Mauian Resort","Selected":false,"Value":"","ListMembers":[]},{"ID":371,"ControlName":null,"Shortcode":"Sands Of Kahana","Code":"Sands Of Kahana","Selected":false,"Value":"","ListMembers":[]},{"ID":372,"ControlName":null,"Shortcode":"Sheraton Maui","Code":"Sheraton Maui","Selected":false,"Value":"","ListMembers":[]},{"ID":373,"ControlName":null,"Shortcode":"Shores Of Maui - Kihei","Code":"Shores Of Maui - Kihei","Selected":false,"Value":"","ListMembers":[]},{"ID":374,"ControlName":null,"Shortcode":"Sugar Beach Resort","Code":"Sugar Beach Resort","Selected":false,"Value":"","ListMembers":[]},{"ID":375,"ControlName":null,"Shortcode":"The Mauian on Napili Bay","Code":"The Mauian on Napili Bay","Selected":false,"Value":"","ListMembers":[]},{"ID":376,"ControlName":null,"Shortcode":"The Plantation Inn","Code":"The Plantation Inn","Selected":false,"Value":"","ListMembers":[]},{"ID":377,"ControlName":null,"Shortcode":"Valley Isle Resort","Code":"Valley Isle Resort","Selected":false,"Value":"","ListMembers":[]},{"ID":378,"ControlName":null,"Shortcode":"Village By The Sea","Code":"Village By The Sea","Selected":false,"Value":"","ListMembers":[]},{"ID":379,"ControlName":null,"Shortcode":"Wailea Beach Villas","Code":"Wailea Beach Villas","Selected":false,"Value":"","ListMembers":[]},{"ID":380,"ControlName":null,"Shortcode":"Wailea Ekahi","Code":"Wailea Ekahi","Selected":false,"Value":"","ListMembers":[]},{"ID":381,"ControlName":null,"Shortcode":"Wailea Ekolu","Code":"Wailea Ekolu","Selected":false,"Value":"","ListMembers":[]},{"ID":382,"ControlName":null,"Shortcode":"Wailea Elua","Code":"Wailea Elua","Selected":false,"Value":"","ListMembers":[]},{"ID":383,"ControlName":null,"Shortcode":"Wailea Marriott","Code":"Wailea Marriott","Selected":false,"Value":"","ListMembers":[]},{"ID":384,"ControlName":null,"Shortcode":"Waiohuli Beach Hale","Code":"Waiohuli Beach Hale","Selected":false,"Value":"","ListMembers":[]},{"ID":385,"ControlName":null,"Shortcode":"Westin Kaanapali Ocean Resort Villas","Code":"Westin Kaanapali Ocean Resort Villas","Selected":false,"Value":"","ListMembers":[]},{"ID":386,"ControlName":null,"Shortcode":"Westin Maui Resort","Code":"Westin Maui Resort","Selected":false,"Value":"","ListMembers":[]},{"ID":387,"ControlName":null,"Shortcode":"Westin Nanea","Code":"Westin Nanea","Selected":false,"Value":"","ListMembers":[]},{"ID":388,"ControlName":null,"Shortcode":"Whaler's Village","Code":"Whaler's Village","Selected":false,"Value":"","ListMembers":[]},{"ID":389,"ControlName":null,"Shortcode":"World Mark Kihei","Code":"World Mark Kihei","Selected":false,"Value":"","ListMembers":[]},{"ID":390,"ControlName":null,"Shortcode":"Wyndham - Maui","Code":"Wyndham - Maui","Selected":false,"Value":"","ListMembers":[]}]},"Name":"Select Your Maui Hotel","DisplayOrder":0,"DisplayAlias":null,"Value":null,"Required":false}],"Schedules":[],"Groupings":[{"ID":46,"Name":"General Luau","DisplayOrder":0,"Content":null,"Active":true,"Hidden":false},{"ID":47,"Name":"Show Only","DisplayOrder":0,"Content":null,"Active":true,"Hidden":false},{"ID":48,"Name":"VIP Luau","DisplayOrder":0,"Content":null,"Active":true,"Hidden":false}],"Customer":{"Email":"","MobilePhone":""}} ;
+  </script>
+  
+  <script src="js/momentJS/moment.js"></script>
+  <script src="js/momentJS/moment-timezone.js"></script>
+  <script src="js/reservation-template.js"></script>
+  <script src="js/reservation-config.js"></script>
+  <script>
+
+      try{
+      
+         let videoAltSrc = ""; // define videoAltSrc here//
+      
+         if(document.getElementById("player").firstElementChild.getAttribute("src").length == 0){
+
+            let videoAlt = doucment.createElement("img");
+            videoAlt.setAttribute("src" , "" + videoAltSrc + "");
+            videoAlt.setAttribute("class","videoAltSrc");
+            document.getElementById("player").innerHTML = "";
+            document.getElementById("player").appendChild(videoAlt);
+        
+         };
+       
+      }catch(error){
+      
+         console.log(error);
+      
+      };
+
+  </script>
+<!-- =============================================================== -->
+<footer>
+    <ul id="first-footer-row">
+        <li><a href="/"><img src="images/rolaylahainaluaulogo.png" id="footer-logo-img"></a></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <ul id="second-footer-row">
+        <li>
+        <div id="footer-phone">
+            <a href="tel:+18086722520">
+                <span class="material-symbols-outlined">call</span>
+                <p>1-808-672-2520</p>
+            </a>
+        </div>
+        <div id="footer-map">
+            <a href="https://maps.app.goo.gl/bsAFSfJS8TFoCj3E8">
+                <span class="material-symbols-outlined">location_on</span>
+                <p><b>Royal Lahaina Resort</b><br>2780 Kekaa Drive,<br>Lahaina, HI 96761</p>
+            </a>
+        </div>
+        <div id="social-icons">
+            <a href=""><img src="images/twitter.svg" alt=""></a>
+            <a href=""><img src="images/facebook.svg" alt=""></a>
+            <a href=""><img src="images/instagram.svg" alt=""></a>
+            <a href=""><img src="images/youtube.svg" alt=""></a>
+        </div>
+        </li>
+        <li>
+            <a href="/reservations.htm">reservations</a>
+            <a href="/about.htm">about</a>
+            <a href="/menu.htm">menu</a>
+            <a href="/location.htm">location</a>
+            <a href="/blog.htm">blog</a>
+        </li>
+        <li>
+            <a href="/">home</a>
+            <a href="/cart.htm">cart</a>
+            <a href="/faq.htm">faq</a>
+            <a href="/sitemap.htm">sitemap</a>
+            <a href="/contact.htm">contact</a>
+        </li>
+    </ul>
+</footer>
+
+ 
+    </main>
+    <!-- ================================================= -->
+    <script src="js/ie9exclude.js" type="text/javascript"></script>
+    <script src="js/toggle.js" type="text/javascript"></script>
+    <script src="js/main.js" type="text/javascript"></script>
+  </body>
+  <!-- ================================================= -->
+</html>

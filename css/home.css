@@ -1,0 +1,377 @@
+#home-hero{
+    width: 95%;
+    position: relative;
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-top: 5.9em;
+    background: black;
+  background-image: url("../images/royal_lahaina_luau_header.jpg");
+  background-size: cover;
+  background-position: 0% 50%;
+  background-repeat: no-repeat;
+  box-shadow: 0em 0em 2em rgba(0,0,0,0.75);
+height: 35em;
+}
+
+#home-hero header {
+  color: white;
+  width: 60%;
+  display: inline-block;
+  text-align: center;
+  padding: 6em 0em 6em 0em;
+  /*! background: rgb(2,0,36); */
+  /*! background: linear-gradient(90deg, rgb(26, 0, 36) 0%, rgba(36, 0, 0, 0) 100%); */
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 5;
+}
+#home-hero h1 {
+  text-transform: capitalize;
+  font-weight: normal;
+  color: white;
+  margin-top: 1em;
+  text-transform: uppercase;
+  font-size: 2.75em;
+  line-height: 0.9em;
+  font-weight: bold;
+ text-shadow: 0em 0em 1em black;
+}
+#home-hero h1 span{
+  font-size: 0.8em;
+}
+#home-hero h2 {
+  font-family: "Montserrat" ,Verdana, Geneva, Tahoma, sans-serif;
+  max-width: 14em;
+  line-height: 1em;
+  margin: 2em auto 1em auto;
+  font-weight: normal;
+  text-align: justify;
+  text-shadow: 0em 0em 1em black;
+}
+#svg1 {
+  transform: scale(1.3);
+}
+#home-hero a {
+  color: #ffc700;
+  border: 0.2em solid #fec500;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0.5em;
+  display: inline-block;
+  font-size: 1.33em;
+  background: #6a2600;
+  box-shadow: 0em 0em 1em black;
+}
+#home-hero a:hover{
+  color: #9d4a00;
+  background: #ffc700;
+  border: 0.2em solid #9d4a00;
+}
+#tapas-border {
+	position: absolute;
+	width: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: -4em;
+	z-index: 3;
+}
+@media(max-width: 900px){
+  #home-hero{
+    height: 30em;
+  }
+  #home-hero header{
+    font-size: 0.8em;
+  }
+  #svg1 {
+    transform: scale(1);
+  }
+}
+ @media(max-width:650px){
+  #home-hero{
+    width: 100%;
+    height: 26em;
+    background: url("../images/royal_lahaina_luau_header_mobile.jpg");
+    background-position: center;
+  }
+  #home-hero header{
+    width: 100%;
+  }
+  #tapas-border{
+    bottom: -2em;
+    z-index: 3;
+  }
+  #home-hero header {
+    padding: 2em;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 3em;
+    bottom: 1em;
+    top: auto;
+  }
+  #home-hero header h1{
+    font-size: 3em;
+    margin: 0 !important;
+  }
+  #home-hero header h2{
+    font-size: 1.8em;
+    margin: 1em auto;
+    text-shadow: 0em 0em 1em black;
+  }
+  #home-hero a{
+    font-size:1.5em;
+  }
+} 
+/* @media(max-width: 600px){
+  #home-hero{
+    height: auto;
+    background-size:100%;
+    background-position: 0% -15%;
+    padding-top: 20em;
+  }
+
+  #home-hero header{
+    padding: 4em 0em 2em 0em;
+    width: 100%;
+    background-color: #242240;
+    bottom: 0;
+    border-radius: 0;
+    z-index: 1;
+    position: relative;
+  }
+} */
+#mini-gallery{
+  background: linear-gradient(180deg, #672500 0%, #9C3600 59.56%, #FF4C00 184.44%);
+  display: table;
+  width: 95%;
+  max-width: 1400px;
+  margin: 0 auto;
+  box-shadow: 0em 0em 2em rgba(0,0,0,0.75);
+}
+#mini-gallery a{
+  width: 33.3%;
+  display: table-cell;
+  overflow: hidden;
+  position: relative;
+  height: 20em;
+}
+#mini-gallery a::after{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  background-size: 100% 100%;
+}
+#mini-gallery #gallery-1::after{
+  background-image: url("../images/mini-gallery-frame-full.png");
+}
+#mini-gallery #gallery-2::after,
+#mini-gallery #gallery-3::after{
+  background-image: url("../images/mini-gallery-frame.png");
+}
+#mini-gallery a img{
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 1;
+}
+@media(max-width:850px){
+  #mini-gallery a{
+   height: 18em;
+  }
+   #mini-gallery a img{
+    width: auto;
+    height: 100%;
+  }
+}
+@media(max-width:650px){
+    #mini-gallery{
+    width: 100%;
+  }
+}
+
+#video-reading {
+  width: 95%;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: table;
+  background-image: url("../images/tapascenter-warm.png");
+  background-size: 100%;
+  background-repeat: repeat-y;
+  padding: 4em 0em;
+}
+#video,
+#reading {
+  display: table-cell;
+  width: 50%;
+  vertical-align: middle;
+  text-align: left;
+}
+#video{
+  text-align: center;
+}
+#reading {
+  text-align: center;
+}
+#video-frame {
+  background: linear-gradient(180deg, #672500 0%, #9C3600 59.56%, #FF4C00 184.44%);
+  padding: 0.5em;
+  width: 90%;
+  max-width: 30em;
+  margin: 0 auto;
+  box-shadow: 0em 0.5em 0.5em -0.25em rgba(0,0,0,0.25);
+}
+#video-frame iframe {
+  width: 100%;
+  height: 20em;
+}
+
+#video h3 {
+  font-size: 2.5em;
+  text-transform: capitalize;
+  color: #ae3d00;
+  width: 9em;
+  line-height: 1em;
+  margin: 0 auto 1em auto;
+  text-shadow: 0em 0em 1em #dbb57f;
+  text-transform: uppercase;
+}
+#reading article {
+  background: #ffdcb7;
+  padding: 2em;
+  width: 85%;
+  box-shadow: 0em 0.5em 0.5em -0.25em rgba(0,0,0,0.25);
+  margin: 0 auto;
+}
+#reading article p {
+  line-height: 1.75em;
+  font-size: 1em;
+  margin-bottom: 1em;
+}
+
+#reading a {
+  color: #20304d;
+  background: #ffdcb7;
+  border: 0.2em solid #20304d;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0.5em;
+  display: inline-block;
+  font-size: 1em;
+}
+@media(max-width:850px){
+	#video,
+  #reading {
+    display: block;
+    width: 100%;
+  }
+  #reading {
+    text-align: center;
+  }
+  #video h3 {
+    width: 90%;
+  }
+  #reading article {
+    margin: 1em auto;
+    max-width: 30em;
+    width: 90%;
+  }  
+}
+@media(max-width:650px){
+   #video-reading{
+    width: 100%;
+  }
+}
+
+#reservation-banner{
+  background-image: url("../images/luau-banner.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 15em;
+  width: 95%;
+  max-width: 1400px;
+  margin: 0 auto;
+  box-shadow: inset 0em 0em 2em;
+}
+@media(max-width:650px){
+   #reservation-banner{
+    width: 100%;
+  }
+}
+#additional{
+  width: 95%;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: table;
+  background-repeat: repeat-y;
+  background-size: 100%;
+}
+#additional-info{
+  display: table-cell;
+  width: 50%;
+  vertical-align: middle;
+  text-align: left;
+  background: #ffdcb7;
+}
+#additional-info article{
+  background: #ffdcb7;
+  width: 95%;
+  margin: 0 auto;
+  padding: 2em 3em;
+}
+#additional-info p {
+  font-size: 1.15em;
+  margin: 1.5em 0em;
+}
+#additional-info li p{
+  line-height: 1em;
+  margin: 1em auto;
+} 
+#additional-info ul{
+  width: 25em;
+  margin-left: 2em;
+}
+#additional-info ul li{
+  list-style-type: circle;
+  list-style-position: outside;
+}
+#additional-info a{
+  color: #6c131b;
+  font-weight: bold;
+}
+#additional-info-img {
+  display: table-cell;
+  width: 50%;
+  vertical-align: middle;
+  background-image: url("../images/sunset.jpg");
+  background-size: cover;
+  background-position: center;
+}
+#additional-info b {
+  color: #692600;
+}
+@media (max-width: 850px) {
+  #additional{
+    display: block;
+    transform: scaleY(-1);
+  }
+  #additional-info, #additional-info-img{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    transform: scaleY(-1);
+  }
+  #additional-info-img{
+    height: 20em;
+  }
+}
+@media(max-width:650px){
+   #additional{
+    width: 100%;
+  }
+}

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Royal Lahaina Luau</title>
+    <meta
+      content="user-scalable = yes, width=320, initial-scale=1"
+      name="viewport"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&family=Patrick+Hand+SC&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link href="css/main.css" rel="stylesheet" />
+  </head>
+<!-- ================================================= -->
+  <body>
+<!-- ================================================= -->
+    <!-- ========== masthead ========== -->
+    <nav id="main-nav">
+
+        <ul>
+            <li class="nav-desktop">
+                <a href="/">home</a>
+                <a href="/reservations.htm">reservations</a>
+                <a href="/menu.htm">menu</a>
+                <a href="/about.htm">about</a>
+            </li>
+
+            <li id="logo">
+                <a href="/">
+                    <img src="images/rolaylahainaluaulogo.png" alt="">
+                </a>
+            </li>
+            <li class="nav-desktop">
+                <a href="/faq.htm">faq</a>
+                <a href="/blog.htm">blog</a>
+                <a href="/contact.htm">contact</a>
+                <a href="/cart.htm">cart</a>
+            </li>
+        </ul>
+        <a href="tel:+18086722520" id="desktop-phone"><span class="material-symbols-outlined">call</span>1-808-672-2520</a>
+
+        <div class="mobile-phone">
+          <a href="tel:+18086722520" id="phone-mobile"><span class="material-symbols-outlined">call</span></a>
+        </div>
+        <div class="mobile-button">
+          <button class="menu-btn" id="menu-btn" name="button" onclick="idToggle('menu-btn','active');idToggle('mobile-nav','active')" type="button">
+              <hr class="menu-btn-hr-1">
+              <hr class="menu-btn-hr-2">
+              <hr class="menu-btn-hr-3">
+          </button>
+        </div>
+    </nav>
+    <img src="images/palm_img.png" alt="" id="palm-left">
+    <img src="images/palm_img.png" alt="" id="palm-right">
+    <nav id="mobile-nav">
+        <a href="/">home</a>
+        <a href="/reservations.htm">reservations</a>
+        <a href="/menu.htm">menu</a>
+        <a href="/about.htm">about</a>
+        <a href="/faq.htm">faq</a>
+        <a href="/blog.htm">blog</a>
+        <a href="/contact.htm">contact</a>
+        <a href="/cart.htm">cart</a>
+    </nav>
+    <a href="/reservations.htm" id="reserve-now">reserve now!</a>
+<!-- ================================================= -->    
+<link href="css/home.css" rel="stylesheet" />   
+<link href="css/reservations.css" rel="stylesheet" />   
+<div id="home-hero">
+  <img src="images/tapasborder.png" alt="" id="tapas-border">
+<header>
+
+<h1><span>myths of maui</span><br>royal lahaina luau</h1>
+<h2>Save Now On Tickets For Maui’s Oldest & Best Luau</h2>
+<a href="/reservations.html">book now</a>
+</header>
+</div>
+
+<!-- ================================================= -->
+<ul id="mini-gallery">
+  <a href="images/mythsofmauiperformer.jpeg" target="_blank" id="gallery-1">
+    <img src="images/mythsofmauiperformer.jpeg" alt="">
+  </a>
+  <a href="images/3.jpg" target="_blank" id="gallery-2">
+    <img src="images/3.jpg" alt="">
+  </a>
+  <a href="images/luauguests.jpg" target="_blank" id="gallery-3"> 
+    <img src="images/luau_imu.png" alt="">
+  </a>
+</ul>
+<!-- =============================================================== -->
+<ul id="video-reading">
+  <li id="video">
+    <h3>maui's longest running luau</h3>
+    <div id="video-frame">
+      <iframe src="https://www.youtube.com/embed/T0f4dX705JY?si=HLMGcmGobgX1_7fL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+  </li>
+  <li id="reading">
+    <article>
+      <p>The Royal Lahaina Luau – Myths of Maui – is Maui’s longest running Hawaiian luau. Conveniently located right on Ka'anapali Beach at the Royal Lahaina Resort, this is a Maui luau that's just too good to be missed! Click below for ticket reservations.</p>
+      <p>Experience a traditional Hawaiian luau right on Ka'anapali Beach! Held oceanfront, the Royal Lahaina Luau invites you to join their ohana (family) for an evening of celebrating Polynesian culture. Enjoy authentic island cuisine, cultural presentations and live entertainment.</p>
+      <a href="/about.html">learn more</a>
+    </article>
+  </li>
+</ul>
+<div id="reservation-banner"></div>
+<!-- =============================================================== -->
+<div id="luau-previews">
+  <div class="luau-preview" id="vip-seating">
+    <header>vip<br />package</header>
+    <hr />
+    <ul>
+      <li><p>&#x2022; Reserved seating area</p></li>
+      <li><p>&#x2022; flower lei for ladies and kukui nut lei for gentlemen</p></li>
+      <li><p>&#x2022; first set of tables to begin dinner service</p></li>
+      <li><p>&#x2022; complimentary premium drinks</p></li>
+      <li><p>&#x2022; First four rows seating close to stage</p></li>
+    </ul>
+    <p class="package-price">
+      from<br />
+      <span>$185.00</span><br />
+      <span class="strikethrough">$208.64</span>
+    </p>
+    <a href="reservations.html#general-seating" class="luau-preview-button" id="vip-reservation">
+      Book Now
+    </a>
+  </div>
+
+  <div class="luau-preview" id="general-seating">
+    <header>general<br />package</header>
+    <hr />
+    <ul>
+      <li><p>&#x2022; Aloha shell lei greeting</p></li>
+      <li><p>&#x2022; dinner</p></li>
+      <li><p>&#x2022; open bar & luau show</p></li>
+      <li><p>&#x2022; Tables pre-assigned by date of booking</p></li>
+      <li><p>&#x2022; Ohana (family) style tables (up to 12 guests per table).</p></li>
+    </ul>
+    <p class="package-price">
+      from<br /><span>$115.00</span><br />
+      <span class="strikethrough">$129.80</span>
+    </p>
+    <a href="reservations.html#general-seating" class="luau-preview-button" id="general-reservation">
+      Book Now
+    </a>
+  </div>
+</div>
+<!-- =============================================================== -->
+
+<div id="additional">
+  <div id="additional-info">
+    <article>
+      <p><b>The Royal Lahaina Luau includes all what makes a Hawaiian luau special:</b></p> 
+      <ul>
+        <li><p>An Aloha Shell Lei greeting</p></li>
+        <li><p>Welcome Mai Tai</p></li>
+        <li><p>Open Bar (Standard Cocktails, Beer, Wine, Soft Drinks, Fruit Punch, and Hot Coffee & Tea)</p></li>
+        <li><p>All-You-Care-to-Eat Luau Buffet Dinner</p></li> 
+        <li><p>An exciting Polynesian Show</p></li>
+      </ul>
+      <hr>
+      <p><a href="/reservations.html">Reserve your tickets online</a> or <a href="tel:+18086722520">call us at <span class="material-symbols-outlined">call</span>(808) 672-2520</a> with any additional questions or to order your luau tickets over the phone.</p>
+      
+      <p><b><span class="material-symbols-outlined">accessible</span> Wheelchair Accessibility:</b> Royal Lahaina Resort and Luau are wheelchair accessible.</p>
+      <p><b><span class="material-symbols-outlined">apparel</span> Required Items to Bring & Attire:</b> A valid government issued photo I.D. is required to consume any alcoholic beverages. Casual dress.</p>
+      <p><b><span class="material-symbols-outlined">sell</span></b> All seats are pre-assigned, so <a href="/reservations.html">make your reservation early</a> for the best seats!</p>
+      <hr>
+    </article>
+  </div>  
+  <div id="additional-info-img"></div>
+</div>
+
+<!-- =============================================================== -->
+<footer>
+    <ul id="first-footer-row">
+        <li><a href="/"><img src="images/rolaylahainaluaulogo.png" id="footer-logo-img"></a></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <ul id="second-footer-row">
+        <li>
+        <div id="footer-phone">
+            <a href="tel:+18086722520">
+                <span class="material-symbols-outlined">call</span>
+                <p>1-808-672-2520</p>
+            </a>
+        </div>
+        <div id="footer-map">
+            <a href="https://maps.app.goo.gl/bsAFSfJS8TFoCj3E8">
+                <span class="material-symbols-outlined">location_on</span>
+                <p><b>Royal Lahaina Resort</b><br>2780 Kekaa Drive,<br>Lahaina, HI 96761</p>
+            </a>
+        </div>
+        <div id="social-icons">
+            <a href=""><img src="images/twitter.svg" alt=""></a>
+            <a href=""><img src="images/facebook.svg" alt=""></a>
+            <a href=""><img src="images/instagram.svg" alt=""></a>
+            <a href=""><img src="images/youtube.svg" alt=""></a>
+        </div>
+        </li>
+        <li>
+            <a href="/reservations.htm">reservations</a>
+            <a href="/about.htm">about</a>
+            <a href="/menu.htm">menu</a>
+            <a href="/location.htm">location</a>
+            <a href="/blog.htm">blog</a>
+        </li>
+        <li>
+            <a href="/">home</a>
+            <a href="/cart.htm">cart</a>
+            <a href="/faq.htm">faq</a>
+            <a href="/sitemap.htm">sitemap</a>
+            <a href="/contact.htm">contact</a>
+        </li>
+    </ul>
+</footer>
+
+ 
+    </main>
+    <!-- ================================================= -->
+    <script src="js/ie9exclude.js" type="text/javascript"></script>
+    <script src="js/toggle.js" type="text/javascript"></script>
+    <script src="js/main.js" type="text/javascript"></script>
+  </body>
+  <!-- ================================================= -->
+</html>

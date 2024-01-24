@@ -1,0 +1,956 @@
+/* update 12 */
+.reservation-hero {
+  padding: 10em;
+  margin-top: 6em;
+  background-size: cover !important;
+  background-position: top right;
+  background-image: url("../images/mythsofmauireservationsheader.jpeg");
+  width: 95%;
+  margin: 0 auto;
+  max-width: 1400px;
+  box-shadow: 0em 0em 2em rgba(0,0,0,0.5);
+  margin-top: 6em;
+}
+.reservation-hero h1 {
+  color: white;
+  font-weight: lighter;
+  text-shadow: 0em 0em 1em black;
+  margin: 0.5em 0em;
+  font-size: 3em;
+  line-height: 0.5;
+}
+.reservation-hero hr {
+  border: 1px solid #ffffff59;
+}
+.reservation-hero h3 {
+  color: white;
+  text-shadow: 0em 0em 1em black;
+  font-size: 1.5em;
+  font-weight: lighter;
+  line-height: 2em;
+  margin-left: 1em;
+  font-family: "Montserrat", sans-serif;
+  text-transform: capitalize;
+}
+.reservation-hero hr {
+  max-width: 20em;
+}
+@media (max-width: 1000px) {
+  .reservation-hero {
+    padding: 15em 5em 5em 5em;
+    text-align: top right;
+    margin-top: 4em;
+  }
+}
+@media (max-width: 500px) {
+  .reservation-hero {
+    padding: 7em 2em;
+  }
+  .reservation-hero h1,
+  .reservation-hero h3{
+    text-align: center;
+  } 
+  .reservation-hero hr{
+    margin: 0 auto;
+  }
+}
+#luau-previews {
+  display: table;
+  margin: 0 auto;
+  width: 95%;
+  max-width: 1400px;
+  background: #dbb57f;
+}
+.luau-preview {
+  display: table-cell;
+  width: 50%;
+  background-size: 20em;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  text-align: center;
+  font-size: 1.15em;
+}
+
+.preview-learn-more {
+  color: #002e3e;
+  font-family: "kontikialohajfregular", sans-serif;
+  background: #fafafa;
+  padding: 1em 4em;
+  border-radius: 0.5em;
+  display: inline-block;
+  border: 0;
+  font-size: 1em;
+  margin-top: 1em;
+}
+#vip-seating,
+#general-seating{
+  background-size: 15em;
+  background-repeat: repeat-y;
+}
+#vip-seating{
+  background-image: url("../images/tapasleft.png");
+    background-position: center left;
+  padding-left: 15%;
+}
+#general-seating{
+  background-image: url("../images/tapasright.png");
+    background-position: center right;
+  padding-right: 15%;
+}
+@media(max-width:950px){
+  #vip-seating{
+  padding-left: 0%;
+}
+#general-seating{
+  padding-right: 0%;
+}
+}
+#general-seating,
+#vip-seating {
+  /*! background-color: #dbbe9e; */
+}
+.luau-preview header {
+  text-transform: capitalize;
+  font-weight: normal;
+  text-align: center;
+  line-height: 1em;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+.luau-preview hr {
+  max-width: 13em;
+  margin: 1em auto;
+  border: 0;
+  height: 3px;
+}
+.package-schedule {
+  text-align: center;
+  margin-bottom: 1em;
+  text-transform: capitalize;
+}
+.luau-preview ul {
+  list-style-type: disc;
+  display: inline-block;
+  list-style-position: inside;
+  max-width: 16em;
+  margin: 0 auto;
+}
+
+.luau-preview li {
+  display: block;
+  text-align: left;
+  margin-bottom: 0.25em;
+}
+.package-price {
+  text-transform: capitalize;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+.package-price span {
+  font-size: 1.5em;
+  text-align: left;
+  font-weight: bold;
+  font-family: "Patrick Hand SC";
+}
+
+#general-seating header {
+  color: #1c1d31;
+  font-weight: bold;
+  font-family: "Montserrat" ,Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#vip-seating header {
+  color: #6d2700;
+  font-weight: bold;
+  font-family: "Montserrat" ,Verdana, Geneva, Tahoma, sans-serif;
+  padding-top: 1.5em;
+}
+
+#general-seating hr {
+  background: #1c1d3199;
+}
+#vip-seating hr {
+  background: #b23b00;
+}
+#vip-seating ul,
+#vip-seating p,
+#general-seating ul,
+#general-seating p {
+  line-height: 1.5em;
+  text-transform: capitalize;
+}
+#vip-seating header b {
+  font-weight: bold;
+  font-size: 0.5em;
+}
+
+@media (max-width: 920px) {
+  .luau-preview {
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+  }
+#vip-seating,
+#general-seating{
+  background-size: contain;
+  background-repeat: repeat-y;
+}
+#vip-seating{
+  background-image: url("../images/tapascenter-warm.png");
+    background-position: center;
+}
+#general-seating{
+  background-image: url("../images/tapascenter-warm.png");
+    background-position: center;
+}
+  #general-seating {
+    border-right: none;
+  }
+   #vip-seating ul,
+  #general-seating ul {
+    font-size: 1.15em;
+    max-width: 20em;
+    margin: 0 auto;
+    display: inline-block;
+    text-align: left;
+  }
+}
+
+.package-price {
+  font-size: 1.2em;
+}
+
+#book-packages {
+  padding: 2em;
+  text-align: center;
+}
+#book-packages a {
+  font-size: 1.5em;
+  color: #581f02;
+  font-family: "kontikialohajfregular", sans-serif;
+  background: #f9d365;
+  padding: 1em 4em;
+  border-radius: 0.5em;
+  display: inline-block;
+}
+
+@media(max-width:650px){
+  #luau-previews {
+    width: 100%;
+  }
+}
+@media (max-width: 1080px) {
+  .luau-preview {
+    position: relative;
+  }
+}
+@media (max-width: 920px) {
+  .luau-preview {
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+  }
+  #general-seating {
+    border-right: none;
+  }
+}
+@media(max-width:900px){
+  #vip-seating,
+  #general-seating{
+  }
+}
+.luau-preview-button {
+color: #9d4a00;
+  border: 0.2em solid;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0.5em;
+  display: inline-block;
+font-size: 1.15em;
+background: transparent;
+margin-bottom: 1.5em;
+}
+
+.reservation-button {
+  color: #1c1d31;
+  display: inline-block;
+  padding: 0.5em 2em;
+  font-weight: bold;
+  border: 0;
+  text-transform: capitalize;
+  border-radius: 3em;
+  background: #b7bb65;
+  cursor: pointer;
+  margin-top: 1em;
+}
+.seating-link {
+  color: #1c1d31;
+  display: inline-block;
+  padding: 0.3em 1em;
+  text-transform: capitalize;
+  border-radius: 3em;
+  cursor: pointer;
+  vertical-align: bottom;
+  border: 0.1em solid;
+  font-size: 1.15em;
+}
+
+.reservation-button span:nth-child(1) {
+  font-family: "kontikialohajfregular", sans-serif;
+  font-size: 1.75em;
+  font-weight: lighter;
+  vertical-align: middle;
+}
+
+/*===========*/
+.product-group {
+  background: transparent;
+  border: 1px solid gainsboro;
+  text-align: right;
+  padding: 1em;
+  margin: 0.5em;
+  border-radius: 1em;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+}
+.product-group .title {
+  font-size: 1.5em;
+  margin-right: 1em;
+  float: left;
+  margin-top: 0;
+  color: #333;
+  font-weight: bold;
+}
+.product-group .price {
+  font-size: 1.5em;
+  font-family: "Montserrat" ,Verdana, Geneva, Tahoma, sans-serif;
+}
+.product-group .price span{
+  font-size: 0.7em;
+  text-transform: capitalize !important;
+  margin-right: 0.5em;
+}
+.radio{
+  width: 2em;
+  height: 2em;
+  border-radius: 2em;
+  border: 1px solid black;
+  display: inline-block;
+  vertical-align: bottom;
+  margin-left: 1em;
+}
+.radio.unchecked{
+  background-color: #333;
+}
+.radio.checked{
+  background-color: #498192;
+}
+
+/*===========*/
+#dateInput {
+  height: 0;
+  width: 0;
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+#reservation-window {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 998;
+  background-color: #000000cf;
+  top: 0;
+  left: 0;
+  display: none;
+  font-size: 1.15em;
+}
+#reservation-window.hidden {
+  display: none;
+}
+#reservation-window.active {
+  display: block;
+}
+#reservation-container {
+  background: #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1em;
+  width: 95%;
+  max-width: 35em;
+  background-image: url("../images/SecondaryContentBG.jpg");
+  background-position: top center;
+  background-repeat: repeat-x;
+  background-color: #ffffeb;
+  border-radius: 16px;
+}
+#close-reservation {
+  position: absolute;
+  right: 0.5em;
+  top: 0.5em;
+  background: none;
+  border: 0.15em solid;
+  color: #498192;
+  border-radius: 50%;
+  cursor: pointer;
+  background: wheat;
+}
+#close-reservation .material-symbols-outlined {
+  font-size: 2.5em;
+}
+/* custom JQUERY UI  */
+.ui-datepicker-inline.ui-datepicker.ui-widget.ui-widget-content.ui-helper-clearfix.ui-corner-all {
+  max-width: 50em;
+  width: 100%;
+}
+.ui-state-default {
+  height: 3.5em;
+}
+.ui-datepicker {
+  width: auto;
+  max-width: 40em;
+}
+.ui-widget-header {
+  background: #fff;
+  color: #498192;
+  font-weight: bold;
+  border: 0;
+}
+.ui-datepicker-calendar th span {
+  font-weight: normal;
+}
+
+.ui-widget.ui-widget-content {
+  margin: 0 auto;
+  border: none;
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-button,
+.ui-button {
+  border: none;
+  background: #498192;
+  color: white;
+  padding: 0em 0.25em 0.25em 2em;
+}
+
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus,
+.ui-button:hover,
+.ui-button:focus {
+  border: none;
+  background: white;
+  font-weight: normal;
+  color: #212121;
+}
+
+@media (max-width: 600px) {
+  #datepicker {
+    font-size: 0.8em;
+  }
+}
+.highlighted.thanks-giving .ui-state-default {
+  background: #d35a1f;
+  color: white;
+}
+.highlighted.christmas .ui-state-default {
+  background: #237032;
+  color: white;
+}
+
+.datepicker-key {
+  text-align: left;
+}
+.key-mark {
+  height: 1em;
+  width: 1em;
+  display: inline-block;
+}
+#thanks-giving .key-mark {
+  background-color: orangered;
+}
+#christmas .key-mark {
+  background-color: #237032;
+}
+.date-key-description {
+  display: inline-block;
+  margin: auto 0.5em;
+  vertical-align: top;
+  text-transform: capitalize;
+  font-size: 1.1em;
+}
+@media (max-width: 600px) {
+  #reservation-book {
+    max-height: 40em;
+    overflow-y: scroll;
+  }
+}
+@media (max-height: 400px) {
+  #reservation-book {
+    height: 90%;
+    overflow-y: hidden;
+  }
+}
+
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active,
+a.ui-button:active,
+.ui-button:active,
+.ui-button.ui-state-active:hover {
+  background: #e1c115 !important;
+  color: #498192 !important;
+  font-weight: bold;
+}
+/*===========================*/
+.package-title {
+  text-transform: capitalize;
+  color: #498192;
+  line-height: 1em;
+  font-size: 1.75em;
+  margin-top: 0.5em;
+}
+.next-btn,
+.prev-btn {
+  background-color: #9C3600;
+  color: #fafafa;
+  font-size: 1em;
+  padding: 0.5em 2.5em;
+  border-radius: 2em;
+  text-transform: capitalize;
+  border: 0;
+  margin-top: 0.5em;
+  margin-left: 0.5em;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.next-btn:hover,
+.prev-btn:hover {
+  background-color: #fe9494;
+}
+.reservation-page.hidden {
+  display: none;
+}
+.reservation-page.active {
+  display: block;
+  text-align: center;
+  /*! padding-top: 2em; */
+  /*! padding-bottom: 2em; */
+}
+/*===========================*/
+.price-container {
+  display: table;
+  list-style-type: none;
+  width: 100%;
+  margin-top: 0.5em;
+  border-bottom: 0.1em solid #f7795629;
+  vertical-align: center !important;
+  padding: 0;
+}
+.price-container li:nth-child(1) {
+  width: 25%;
+  display: table-cell;
+  text-align: center;
+}
+.price-container li:nth-child(2) {
+  display: table-cell;
+  width: 56%;
+  text-align: center;
+  padding: 0em 0.25em;
+}
+@media (max-width: 500px) {
+  .price-container li:nth-child(2) {
+    width: 65%;
+  }
+}
+.price-description {
+  font-family: sans-serif;
+  display: inline-block;
+  margin: 0 auto;
+}
+.price-container li:nth-child(3) {
+  display: table-cell;
+  text-align: center;
+}
+@media (max-width: 600px) {
+  .price-container li:nth-child(3) {
+    text-align: right !important;
+  }
+}
+.price-container .price-control {
+  height: 0;
+  width: 0;
+  border: 0;
+}
+.list-price,
+.sale-price {
+  display: inline-block;
+  width: 5em;
+  text-align: center;
+  color: #498192;
+  font-size: 1.15em;
+  margin-bottom: 0.25em;
+  margin-top: 0.25em;
+  position: relative;
+}
+.list-price.strike-price {
+  opacity: 0.5;
+}
+.list-price.strike-price:after {
+  content: "_______";
+  position: absolute;
+  right: 0;
+  width: 100%;
+  height: 1em;
+  top: 0.33em;
+  line-height: 2em;
+}
+
+@media (max-width: 600px) {
+  .list-price,
+  .sale-price {
+    font-size: 1em;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+.list-price {
+  color: #333;
+  opacity: 0.9;
+}
+.list-price::before {
+  content: "list";
+  display: block;
+  font-size: 0.8em;
+  text-transform: capitalize;
+  text-align: center;
+  font-weight: lighter;
+}
+.sale-price::before {
+  content: "sale";
+  display: block;
+  font-size: 0.8em;
+  text-transform: capitalize;
+  font-weight: lighter;
+}
+.price-list {
+  text-align: center;
+  display: inline-block;
+}
+.price-container li {
+  vertical-align: middle;
+}
+.collector-container {
+  padding: 1em;
+  text-align: center;
+}
+.collector-container label {
+  display: block;
+  color: #333;
+  font-size: 1.2em;
+}
+.collector-container input[type="text"],
+.collector-container input[type="email"] {
+  padding: 1em;
+  width: 100%;
+  max-width: 25em;
+  margin: 1em auto;
+  border-radius: 0.75em;
+  border: 0.15em solid #a9a860;
+}
+.collector-container select {
+  padding: 1em;
+  width: 100%;
+  max-width: 25em;
+  margin: 1em auto;
+  border-radius: 0.75em;
+  border: 0.15em solid #a9a860;
+  background: white;
+  cursor: pointer;
+}
+.spinner {
+  width: 2em;
+  font-size: 1em;
+  vertical-align: middle;
+  display: inline-block;
+  border: 0;
+  padding: 0.25em 0.2em;
+  text-align: center;
+}
+
+.minus-button,
+.plus-button {
+  color: #498192;
+  background: transparent;
+  border: 0;
+  border-radius: 5em;
+  cursor: pointer;
+  padding: 0.25em;
+  vertical-align: middle;
+}
+.spinner-container {
+  border-radius: 5em;
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+  max-width: 7em;
+  background: #fff;
+  border: 0.15em solid #498192;
+}
+@media (max-width: 650px) {
+  .spinner-container {
+    text-align: center;
+    transform: scaleY(-1);
+    width: 2.5em;
+    padding: 0;
+  }
+  .spinner {
+    display: block;
+    margin: 0 auto;
+    transform: scaleY(-1);
+    width: 1.25em;
+    height: 1.5em;
+  }
+  .price-container li:nth-child(1) {
+    width: 15%;
+  }
+  .collector-container {
+    width: 100%;
+  }
+  .minus-button,
+  .plus-button {
+    padding: 0;
+  }
+}
+#reservation-controls {
+  text-align: center;
+}
+#reserve-now {
+}
+
+#addToCartSubmit {
+  background-color: #fd5b6e;
+  color: #fafafa;
+  font-size: 1em;
+  padding: 0.5em 2.5em;
+  border-radius: 2em;
+  text-transform: capitalize;
+  border: 0;
+  margin-top: 0.5em;
+  margin-left: 0.5em;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#calendar-message,
+#price-message {
+  display: block;
+  background-color: #8a0000;
+  text-align: center;
+  padding: 0.25em 0em;
+  border-radius: 2em;
+  margin: 0 auto;
+  font-size: 0.9em;
+}
+#calendar-message span,
+#calendar-message p,
+#price-message span,
+#price-message p {
+  color: white;
+  font-size: 1em;
+  display: inline-block;
+  vertical-align: middle;
+}
+#calendar-message.hidden,
+#price-message.hidden {
+  width: 0;
+  overflow: hidden;
+  height: 0;
+}
+#calendar-message.visible,
+#price-message.visible {
+  width: 100%;
+}
+#calendar-message .material-symbols-outlined,
+#price-message .material-symbols-outlined {
+  font-size: 1.25em;
+  border: 2px solid white;
+  border-radius: 50%;
+  padding: 0.15em;
+  margin: 0em 0.25em;
+}
+/*=====================*/
+#seating-aside {
+  background-size: 50em;
+  text-align: justify;
+  padding: 5em;
+  background: #ece2d7;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+#seating-aside p {
+  line-height: 2.25em;
+}
+@media (max-width: 600px) {
+  #seating-aside {
+    padding: 2em;
+  }
+}
+@media (max-height: 600px) {
+  #reservation-container {
+    overflow-y: scroll;
+    height: 95%;
+  }
+}
+#security-header {
+  background: none;
+  border: 0;
+  color: #498192;
+  cursor: pointer;
+}
+#security-header img {
+  width: 2em;
+  display: inline-block;
+  vertical-align: middle;
+}
+#security-header span {
+  font-size: 1.5em;
+  vertical-align: middle;
+  display: inline-block;
+}
+#security-dialogue {
+  position: absolute;
+  top: 4em;
+  background: #41a0b8;
+  max-width: 40em;
+  width: 90%;
+  padding: 2em;
+  border-radius: 0.5em;
+  z-index: 2;
+  box-shadow: 0em 0.25em 0.5em rgba(0, 0, 0, 0.33);
+  cursor: pointer;
+}
+#security-dialogue {
+  display: none;
+}
+#security-dialogue.active {
+  display: block;
+}
+#security-dialogue::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 1em solid transparent;
+  border-right: 1em solid transparent;
+  border-bottom: 2em solid #41a0b8;
+  position: absolute;
+  left: 1em;
+  top: -1.5em;
+}
+#security-dialogue::after {
+  content: "x";
+  font-family: sans-serif;
+  color: white;
+  font-size: 1.15em;
+  background-color: #41a0b8;
+  border-radius: 1em;
+  padding: 0.1em 0.4em 0.1em 0.4em;
+  position: absolute;
+  right: 0.25em;
+  top: 0.25em;
+  border: 0.125em solid white;
+}
+#security-dialogue p {
+  color: white;
+  line-height: 2em;
+}
+#trust-logo-container {
+  background: ivory;
+  text-align: center;
+  padding-bottom: 1em;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+#unavailable-package {
+  text-align: center;
+  padding: 2em;
+  overflow: hidden;
+}
+#unavailable-package .material-symbols-outlined {
+  font-size: 5em;
+  color: #3336;
+}
+#unavailable-package h2 {
+  color: #333;
+  max-width: 16em;
+  margin: 0 auto;
+  line-height: 1em;
+  margin: 1em auto;
+}
+#unavailable-package p {
+  font-size: 1.1em;
+  color: #333;
+}
+
+#cutoff-window {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  padding: 3em;
+  border-radius: 0.8em;
+  box-shadow: 0em 0em 2em #0000009c;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.75);
+}
+#cutoff-message-content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+#cutoff-window .material-symbols-outlined {
+  font-size: 3em;
+  color: white;
+}
+#cutoff-window p {
+  font-size: 1em;
+  padding: 1em;
+  color: white;
+  font-weight: bold;
+}
+#window-button {
+  background-color: #fd5b6e;
+  color: #fafafa;
+  font-size: 1em;
+  padding: 0.5em 2.5em;
+  border-radius: 2em;
+  text-transform: capitalize;
+  border: 0;
+  margin-top: 0.5em;
+  margin-left: 0.5em;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#cutoff-window {
+  display: none;
+}
+#cutoff-window.active {
+  display: block;
+}
+	.strikethrough{
+		opacity: 0.35;
+		font-size: 1em !important;
+		text-decoration: line-through;
+    font-family: "Montserrat" !important;;
+	  }
