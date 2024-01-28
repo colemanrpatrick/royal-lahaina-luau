@@ -458,7 +458,6 @@ let clearDatepickerKey = () => {
       datePickerKey[i].innerHTML = ''; 
     };
   } catch (error) {
-\\
   };
   
 };

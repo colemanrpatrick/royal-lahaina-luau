@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Royal Lahaina Luau</title>
+    <meta
+      content="user-scalable = yes, width=320, initial-scale=1"
+      name="viewport"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&family=Patrick+Hand+SC&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link href="css/main.css" rel="stylesheet" />
+  </head>
+<!-- ================================================= -->
+  <body>
+<!-- ================================================= -->
+    <!-- ========== masthead ========== -->
+    <nav id="main-nav">
+
+        <ul>
+            <li class="nav-desktop">
+                <a href="/">home</a>
+                <a href="/reservations.htm">reservations</a>
+                <a href="/menu.htm">menu</a>
+                <a href="/about.htm">about</a>
+            </li>
+
+            <li id="logo">
+                <a href="/">
+                    <img src="images/rolaylahainaluaulogo.png" alt="">
+                </a>
+            </li>
+            <li class="nav-desktop">
+                <a href="/faq.htm">faq</a>
+                <a href="/blog.htm">blog</a>
+                <a href="/contact.htm">contact</a>
+                <a href="/cart.htm">cart</a>
+            </li>
+        </ul>
+        <a href="tel:+18086722520" id="desktop-phone"><span class="material-symbols-outlined">call</span>1-808-672-2520</a>
+
+        <div class="mobile-phone">
+          <a href="tel:+18086722520" id="phone-mobile"><span class="material-symbols-outlined">call</span></a>
+        </div>
+        <div class="mobile-button">
+          <button class="menu-btn" id="menu-btn" name="button" onclick="idToggle('menu-btn','active');idToggle('mobile-nav','active')" type="button">
+              <hr class="menu-btn-hr-1">
+              <hr class="menu-btn-hr-2">
+              <hr class="menu-btn-hr-3">
+          </button>
+        </div>
+    </nav>
+    <img src="images/palm_img.png" alt="" id="palm-left">
+    <img src="images/palm_img.png" alt="" id="palm-right">
+    <nav id="mobile-nav">
+        <a href="/">home</a>
+        <a href="/reservations.htm">reservations</a>
+        <a href="/menu.htm">menu</a>
+        <a href="/about.htm">about</a>
+        <a href="/faq.htm">faq</a>
+        <a href="/blog.htm">blog</a>
+        <a href="/contact.htm">contact</a>
+        <a href="/cart.htm">cart</a>
+    </nav>
+    <a href="/reservations.htm" id="reserve-now">reserve now!</a>
+<!-- ================================================= -->   
+<div id="page-container">
+  <header id="header">
+      <h1>Royal Lahaina Luau</h1>
+  </header>
+  <article>
+   <p>The Royal Lahaina Luau, also known as the Myths of Maui Luau, on the island of Maui, Hawaii, is conveniently located in Ka'anapali, just 10 minutes from Lahaina at the Royal Lahaina Resort. It is Maui's longest running Polynesian luau. Guests enjoy a delicious luau buffet dinner with an open bar, cultural presentations and a Polynesian revue featuring Hawaiian, Samoan, Tahitian and Maori music and dances.</p>
+  </article>
+</div>
+<!-- =============================================================== -->
+<footer>
+    <ul id="first-footer-row">
+        <li><a href="/"><img src="images/rolaylahainaluaulogo.png" id="footer-logo-img"></a></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <ul id="second-footer-row">
+        <li>
+        <div id="footer-phone">
+            <a href="tel:+18086722520">
+                <span class="material-symbols-outlined">call</span>
+                <p>1-808-672-2520</p>
+            </a>
+        </div>
+        <div id="footer-map">
+            <a href="https://maps.app.goo.gl/bsAFSfJS8TFoCj3E8">
+                <span class="material-symbols-outlined">location_on</span>
+                <p><b>Royal Lahaina Resort</b><br>2780 Kekaa Drive,<br>Lahaina, HI 96761</p>
+            </a>
+        </div>
+        <div id="social-icons">
+            <a href=""><img src="images/twitter.svg" alt=""></a>
+            <a href=""><img src="images/facebook.svg" alt=""></a>
+            <a href=""><img src="images/instagram.svg" alt=""></a>
+            <a href=""><img src="images/youtube.svg" alt=""></a>
+        </div>
+        </li>
+        <li>
+            <a href="/reservations.htm">reservations</a>
+            <a href="/about.htm">about</a>
+            <a href="/menu.htm">menu</a>
+            <a href="/location.htm">location</a>
+            <a href="/blog.htm">blog</a>
+        </li>
+        <li>
+            <a href="/">home</a>
+            <a href="/cart.htm">cart</a>
+            <a href="/faq.htm">faq</a>
+            <a href="/sitemap.htm">sitemap</a>
+            <a href="/contact.htm">contact</a>
+        </li>
+    </ul>
+</footer>
+
+ 
+    </main>
+    <!-- ================================================= -->
+    <script src="js/ie9exclude.js" type="text/javascript"></script>
+    <script src="js/toggle.js" type="text/javascript"></script>
+    <script src="js/main.js" type="text/javascript"></script>
+  </body>
+  <!-- ================================================= -->
+</html>

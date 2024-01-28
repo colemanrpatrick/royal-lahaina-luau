@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Royal Lahaina Luau</title>
+    <meta
+      content="user-scalable = yes, width=320, initial-scale=1"
+      name="viewport"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&family=Cinzel:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link href="css/main.css" rel="stylesheet" />
+  </head>
+<!-- ================================================= -->
+  <body>
+<!-- ================================================= -->
+    <!-- ========== masthead ========== -->
+    <nav id="main-nav">
+
+        <ul>
+            <li class="nav-desktop">
+                <a href="/">home</a>
+                <a href="/reservations.htm">reservations</a>
+                <a href="/menu.htm">menu</a>
+                <a href="/about.htm">about</a>
+            </li>
+
+            <li id="logo">
+                <a href="/">
+                    <img src="images/rolaylahainaluaulogo.png" alt="">
+                </a>
+            </li>
+            <li class="nav-desktop">
+                <a href="/faq.htm">faq</a>
+                <a href="/blog.htm">blog</a>
+                <a href="/contact.htm">contact</a>
+                <a href="/cart.htm">cart</a>
+            </li>
+        </ul>
+        <a href="tel:+18086722520" id="desktop-phone"><span class="material-symbols-outlined">call</span>1-808-672-2520</a>
+
+        <div class="mobile-phone">
+          <a href="tel:+18086722520" id="phone-mobile"><span class="material-symbols-outlined">call</span></a>
+        </div>
+        <div class="mobile-button">
+          <button class="menu-btn" id="menu-btn" name="button" onclick="idToggle('menu-btn','active');idToggle('mobile-nav','active')" type="button">
+              <hr class="menu-btn-hr-1">
+              <hr class="menu-btn-hr-2">
+              <hr class="menu-btn-hr-3">
+          </button>
+        </div>
+    </nav>
+    <img src="images/palm_img.png" alt="" id="palm-left">
+    <img src="images/palm_img.png" alt="" id="palm-right">
+    <nav id="mobile-nav">
+        <a href="/">home</a>
+        <a href="/reservations.htm">reservations</a>
+        <a href="/menu.htm">menu</a>
+        <a href="/about.htm">about</a>
+        <a href="/faq.htm">faq</a>
+        <a href="/blog.htm">blog</a>
+        <a href="/contact.htm">contact</a>
+        <a href="/cart.htm">cart</a>
+    </nav>
+    <a href="/reservations.htm" id="reserve-now">reserve now!</a>
+<!-- ================================================= -->   
+
+<div id="page-container">
+  <header id="header">
+      <h1>Luau Menu</h1>
+  </header>
+
+  <ul id="menu-gallery">
+    <a href="images/mythsofmauiperformer.jpeg" target="_blank" id="gallery-1">
+      <img src="images/menu-1.png" alt="">
+    </a>
+    <a href="images/3.jpg" target="_blank" id="gallery-2">
+      <img src="images/menu-2.png" alt="">
+    </a>
+    <a href="images/luauguests.jpg" target="_blank" id="gallery-3"> 
+      <img src="images/menu-3.png" alt="">
+    </a>
+  </ul>
+
+
+  <!-- Menu
+
+  HAWAIIAN LUAU DINNER
+  Fresh Island Greens, Shaved Kabocha, Fennel,
+  Tomatoes, Ume-Lilikoi Vinaigrette GF/Vegan/Dairy Free/Nut Free
+  Kamuela Tomatoes, Japanese Cucumber, Maui Onion GF/Vegan/Dairy Free/Nut Free; Contains Sesame Oil
+  Watercress and Tofu Maui Onion Salad GF/Vegan/Dairy Free/Nut Free; Contains Sesame Oil
+  Sliced Fresh Island Maui Gold Pineapple GF/Vegan/Dairy Free/Nut Free
+  Furikake Potato & Macaroni Salad GF; Contains Sesame Oil
+  Lomi Lomi Salmon Salad GF; Contains Sesame Oil
+  Hanalei Poi GF/Vegan/Dairy Free/Nut Free
+  CARVING STATION
+  12 Hour Roasted Prime Rib GF/Dairy Free/Nut Free
+  Smoked Au Jus GF/Dairy Free/Nut Free
+  Horseradish Cream GF/ Nut Free
+  BUFFET LINE
+  Huli Huli Chicken, Pickled Red Onion, Smoked Jus * GF/Dairy Free/Nut Free; Contains Sesame Oil
+  Above Ground Smoked Kalua Pork* GF/Dairy Free/Nut Free; Contains Pork
+  Seared Island Catch* Ume & Yuzu Beurre Blanc Sauce GF/Nut Free
+  Molokai Style Sweet Potatoes GF/Vegan/Dairy Free
+  Island Fried Rice GF
+  Taro and Sweet Rolls with Butter Contains Gluten/Eggs/Dairy
+  DESSERTS
+  Coconut Crème Nut Free; Contains Gluten/Eggs/Dairy
+  Haupia GF/Vegan
+  Pineapple Upside Down Cake with Koloa Rum Nut Free; Contains Gluten/Eggs/Dairy
+  Hawaiian Paradise Kona Blend Coffee, Decaffeinated Coffee and Taylor Assorted Teas -->
+
+  <div id="luau-menu">
+    <div class="column">
+      <header>HAWAIIAN LUAU DINNER</header>
+      <ul>
+        <li> <p>Fresh Island Greens, Shaved Kabocha, Fennel, Tomatoes, Ume-Lilikoi Vinaigrette</p> <span>Gluten Free, Vegan, Dairy Free, Nut Free</span></li>
+        <li> <p>Kamuela Tomatoes, Japanese Cucumber, Maui Onion</p> <span>Gluten Free, Vegan, Dairy Free, Nut Free</span></li>
+        <li> <p>Watercress and Tofu Maui Onion Salad</p> <span>Gluten Free, Vegan, Dairy Free, Nut Free, Contains Sesame Oil</span></li>
+        <li> <p>Sliced Fresh Island Maui Gold Pineapple</p> <span>Gluten Free, Vegan, Dairy Free, Nut Free</span></li>
+        <li> <p>Furikake Potato & Macaroni Salad</p> <span>Gluten Free, Contains Sesame Oil</span></li>
+        <li> <p>Lomi Lomi Salmon Salad</p> <span>Gluten Free, Contains Sesame Oil</span></li>
+        <li> <p>Hanalei Poi</p>   <span>Gluten Free, Vegan, Dairy Free, Nut Free</span></li>
+      </ul>
+      <header>CARVING STATION</header>
+      <ul>
+        <li><p>12 Hour Roasted Prime Rib</p> <span>Gluten Free, Dairy Free, Nut Free</span></li>
+        <li><p>Smoked Au Jus</p> <span>Gluten Free, Dairy Free, Nut Free</span></li>
+        <li><p>Horseradish Cream</p> <span>Gluten Free, Nut Free</span></li>
+      </ul>
+    </div>
+    <div class="column">
+      <header>BUFFET LINE</header>
+      <ul>
+        <li><p>Huli Huli Chicken, Pickled Red Onion, Smoked Jus *</p> <span>Gluten Free, Dairy Free, Nut Free, Contains Sesame Oil</span></li>
+        <li><p>Above Ground Smoked Kalua Pork *</p> <span>Gluten Free, Dairy Free, Nut Free, Contains Pork</span></li>
+        <li><p>Seared Island Catch* Ume & Yuzu Beurre Blanc Sauce</p> <span>Gluten Free, Nut Free</span></li>
+        <li><p>Molokai Style Sweet Potatoes Gluten</p> <span>Free, Vegan, Dairy Free</span></li>
+        <li><p>Island Fried Rice</p> <span>Gluten Free</span></li>
+        <li><p>Taro and Sweet Rolls with Butter</p> <span>Contains Gluten, Eggs, Dairy</span></li>
+      </ul>
+      <header>DESSERTS</header>
+      <ul>
+        <li><p>Coconut Crème</p> <span>Nut Free, Contains Gluten, Eggs, Dairy</span></li>
+        <li><p>Haupia</p> <span>Gluten Free, Vegan</span></li>
+        <li><p>Pineapple Upside Down Cake with Koloa Rum</p> <span>Nut Free, Contains Gluten, Eggs, Dairy</span></li>
+        <li><p>Hawaiian Paradise Kona Blend Coffee</p> <span></span></li>
+        <li><p>Decaffeinated Coffee and Taylor Assorted Teas</p> <span></span></li>
+      </ul>
+    </div>
+  </div>
+  
+  <article>
+    <p>The Royal Lahaina Luau offers a wide variety of delicacies. For vegetarian guests, a tofu veggie stir fry is available as well with advance notice. The Royal Lahaina Luau also has the island's only kid friendly menu, so no one will leave hungry!</p>
+  </article>
+
+  <aside>
+    <p>*A tofu veggie stir fry entrée (vegan and/or gluten free) is available upon request with 24 hour advance notice.</p>
+    <p><b><span class="material-symbols-outlined">local_bar</span>Open Bar: </b>Features a great selection of complimentary tropical cocktails, beer, wine and a variety of non-alcoholic beverages. $5 per drink for premium alcohol or frozen blended drinks.</p>
+    <p><b>Please note: </b>Menu is subject to change without notice.</p>
+  </aside>
+</div>
+<!-- =============================================================== -->
+<footer>
+    <ul id="first-footer-row">
+        <li><a href="/"><img src="images/rolaylahainaluaulogo.png" id="footer-logo-img"></a></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <ul id="second-footer-row">
+        <li>
+        <div id="footer-phone">
+            <a href="tel:+18086722520">
+                <span class="material-symbols-outlined">call</span>
+                <p>1-808-672-2520</p>
+            </a>
+        </div>
+        <div id="footer-map">
+            <a href="https://maps.app.goo.gl/bsAFSfJS8TFoCj3E8">
+                <span class="material-symbols-outlined">location_on</span>
+                <p><b>Royal Lahaina Resort</b> 2780 Kekaa Drive, Lahaina, HI 96761</p>
+            </a>
+        </div>
+        <div id="social-icons">
+            <a href=""><img src="images/twitter.svg" alt=""></a>
+            <a href=""><img src="images/facebook.svg" alt=""></a>
+            <a href=""><img src="images/instagram.svg" alt=""></a>
+            <a href=""><img src="images/youtube.svg" alt=""></a>
+        </div>
+        </li>
+        <li>
+            <a href="/reservations.htm">reservations</a>
+            <a href="/about.htm">about</a>
+            <a href="/menu.htm">menu</a>
+            <a href="/location.htm">location</a>
+            <a href="/blog.htm">blog</a>
+        </li>
+        <li>
+            <a href="/">home</a>
+            <a href="/cart.htm">cart</a>
+            <a href="/faq.htm">faq</a>
+            <a href="/sitemap.htm">sitemap</a>
+            <a href="/contact.htm">contact</a>
+        </li>
+    </ul>
+</footer>
+
+ 
+    </main>
+    <!-- ================================================= -->
+    <script src="js/ie9exclude.js" type="text/javascript"></script>
+    <script src="js/toggle.js" type="text/javascript"></script>
+    <script src="js/main.js" type="text/javascript"></script>
+  </body>
+  <!-- ================================================= -->
+</html>

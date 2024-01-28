@@ -97,7 +97,7 @@ function tagNameToggle(tagName,activeClass,tagNameIndex){
 
 }
 /*== tabs toggle ==*/
-function tabToggle(number,element,activeClass){
+function pageToggle(number,element,activeClass){
   elIndex = number;
   var el = document.getElementsByClassName(element);
   for (var i = 0; i < el.length; i++) {
@@ -106,6 +106,17 @@ function tabToggle(number,element,activeClass){
   el[elIndex].className += activeClass;
 }
 
-
+function tabToggle(targetElement, element) {
+  console.log("clicked");
+  var parentClass = targetElement.parentNode.className;
+  var el = document.getElementsByClassName(element);
+  // Closes all
+  for (var i = 0; i < el.length; i++) {
+      el[i].className = element;
+  }
+  if (parentClass == element) {
+      targetElement.parentNode.className = element + ' active';
+  }
+}
 
 
